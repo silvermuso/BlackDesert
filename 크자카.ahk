@@ -3,7 +3,7 @@
 	크자카이동(50000,repeatYn)
 	cnt := 0
 	while(%크자카매크로시작% == true){
-		if(search_img_GPS("Image\크자카\크자카입구.bmp",processId,x,y,110,행동X1,행동Y1,행동X2,행동Y2)){
+		if(search_img_GPS("Image\world_boss\크자카입구.bmp",processId,x,y,110,행동X1,행동Y1,행동X2,행동Y2)){
 			leftClick(x,y,1)
 			
 			;~ 출정 클릭
@@ -25,14 +25,14 @@
 	}
 	
 	while(%크자카매크로시작% == true){
-		if(search_img_GPS("Image\크자카\사망.bmp",processId,x,y,60,행동X1,행동Y1,행동X2,행동Y2)){
+		if(search_img_GPS("Image\world_boss\사망.bmp",processId,x,y,60,행동X1,행동Y1,행동X2,행동Y2)){
 			leftClick(x,y,1)
 			
 			;~ 자동사냥클릭
 			sleep, 4000
 			leftClick(450,700,1)
 		}else if(repeatYn=="Y"){
-			if(search_img_GPS("Image\크자카\크자카 완료.bmp",processId,x,y,80,크자카완료X1,크자카완료Y1,크자카완료X2,크자카완료Y2)){
+			if(search_img_GPS("Image\world_boss\크자카 완료.bmp",processId,x,y,80,크자카완료X1,크자카완료Y1,크자카완료X2,크자카완료Y2)){
 				leftClick(x,y,1)
 				break
 			}
@@ -49,9 +49,9 @@ return
 	;~ 크자카 이동 이미지 클릭
 	sleep,200
 	if(repeatYn == "N"){
-		if(search_img_GPS("Image\크자카\크자카이미지.bmp",processId,x,y,100,크자카이미지X1,크자카이미지Y1,크자카이미지X2,크자카이미지Y2)){
+		if(search_img_GPS("Image\world_boss\크자카이미지.bmp",processId,x,y,100,크자카이미지X1,크자카이미지Y1,크자카이미지X2,크자카이미지Y2)){
 			leftClick(x,y,1)
-		}else if(search_img_GPS("Image\크자카\크자카이미지2.bmp",processId,x,y,100,크자카이미지X1,크자카이미지Y1,크자카이미지X2,크자카이미지Y2)){
+		}else if(search_img_GPS("Image\world_boss\크자카이미지2.bmp",processId,x,y,100,크자카이미지X1,크자카이미지Y1,크자카이미지X2,크자카이미지Y2)){
 			leftClick(x,y,1)
 		}
 	

@@ -170,7 +170,7 @@ go사냥터(){
 	;~ if(search_img_GPS("Image\repeat\마을가기마크.bmp",processId,x,y,50,특수메뉴X1,특수메뉴Y1,특수메뉴X2,특수메뉴Y2)){
 	leftClick(330,70,1)
 	sleep, 1500
-	if(search_img_GPS("Image\크자카\크자카출정.bmp",processId,x,y,70,크자카출정X1,크자카출정Y1,크자카출정X2,크자카출정Y2)){
+	if(search_img_GPS("Image\world_boss\크자카출정.bmp",processId,x,y,70,크자카출정X1,크자카출정Y1,크자카출정X2,크자카출정Y2)){
 		;~ msgbox,1
 		leftClick(x,y,1)
 		sleep,500
