@@ -1,56 +1,56 @@
-Gui, Add, Text, x12 y9 w90 h20 , *½ÃÀÛÀ§Ä¡
-Gui, Add, ComboBox, x102 y9 w100 h20 vStartGPS Choose1, ÀÚµ¿»ç³É|¸ŞÀÎÄù|Å©ÀÚÄ«|³¬½Ã|Åä¹ú
-Gui, Add, Text, x212 y9 w80 h20 , *ÇÁ·Î¼¼½º¸í
+Gui, Add, Text, x12 y9 w90 h20 , *ì‹œì‘ìœ„ì¹˜
+Gui, Add, ComboBox, x102 y9 w100 h100 vStartGPS Choose1, ìë™ì‚¬ëƒ¥|ë©”ì¸í€˜|í¬ìì¹´|ë‚šì‹œ|í† ë²Œ
+Gui, Add, Text, x212 y9 w80 h20 , *í”„ë¡œì„¸ìŠ¤ëª…
 Gui, Add, Edit, x292 y9 w100 h20 vWinNmEdit
-Gui, Add, Text, x12 y39 w90 h20 , ÀåºñÁ¦¹°
-Gui, Add, ComboBox, x102 y39 w100 h20 vblackPixieEat Choose5, |È¸»ö|ÇÏ¾á»ö|ÃÊ·Ï»ö|ÆÄ¶õ»ö|º¸¶ó»ö|³ë¶õ»ö
-Gui, Add, Text, x12 y69 w90 h20 , Æê ¸ÔÀÌ
-Gui, Add, ComboBox, x102 y69 w100 h20 vpetEatSel Choose2, |±âº»|¿µ¾ç½Ä
-Gui, Add, Text, x212 y39 w80 h20 , ¼öÁ¤ÇÕ¼º
-Gui, Add, ComboBox, x292 y39 w100 h20 vcrystalSel Choose2, |ÃÊ·Ï»ö|ÆÄ¶õ»ö
+Gui, Add, Text, x12 y39 w90 h100 , ì¥ë¹„ì œë¬¼
+Gui, Add, ComboBox, x102 y39 w100 h100 vblackPixieEat Choose5, íšŒìƒ‰|í•˜ì–€ìƒ‰|ì´ˆë¡ìƒ‰|íŒŒë€ìƒ‰|ë³´ë¼ìƒ‰|ë…¸ë€ìƒ‰
+Gui, Add, Text, x12 y69 w90 h20 , í« ë¨¹ì´
+Gui, Add, ComboBox, x102 y69 w100 h60 vpetEatSel Choose2, ê¸°ë³¸|ì˜ì–‘ì‹
+Gui, Add, Text, x212 y39 w80 h20 , ìˆ˜ì •í•©ì„±
+Gui, Add, ComboBox, x292 y39 w100 h60 vcrystalSel Choose2, ì´ˆë¡ìƒ‰|íŒŒë€ìƒ‰
 Gui, Add, GroupBox, x2 y-11 w130 h0 , GroupBox
-Gui, Add, Tab, x12 y139 w550 h150 , Åä¹ú
-Gui, Add, Text, x22 y169 w80 h20 , »¡°£ÄÚ
-Gui, Add, DropDownList, x102 y169 w40 h60 vTobal1, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x152 y169 w80 h20 , ±â¾Æ½º
-Gui, Add, DropDownList, x232 y169 w40 h20 vTobal2, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x282 y169 w80 h20 , ºñ°ÌÇÑº£±×
-Gui, Add, DropDownList, x362 y169 w40 h20 vTobal3, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x412 y169 w80 h20 , ¾Ë·éµğ
-Gui, Add, DropDownList, x492 y169 w40 h20 vTobal4, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x22 y199 w80 h20 , Æ¼Æ¼¿ò
-Gui, Add, DropDownList, x102 y199 w40 h20 vTobal5, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x152 y199 w80 h20 , ¸Ó½ºÄ­
-Gui, Add, DropDownList, x232 y199 w40 h20 vTobal6, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x282 y199 w80 h20 , ¿À¸£±×
-Gui, Add, DropDownList, x362 y199 w40 h20 vTobal7, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x412 y199 w80 h20 , ÄÌÄ«½º
-Gui, Add, DropDownList, x492 y199 w40 h20 vTobal8, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x22 y229 w80 h20 , °ËÀº°¥±â
-Gui, Add, DropDownList, x102 y229 w40 h20 vTobal9, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x152 y229 w80 h20 , »ç¿ì´Ò
-Gui, Add, DropDownList, x232 y229 w40 h20 vTobal10, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x282 y229 w80 h20 , °Ô¾ÆÄí
-Gui, Add, DropDownList, x362 y229 w40 h20 vTobal11, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x412 y229 w80 h20 , Äíº£
-Gui, Add, DropDownList, x492 y229 w40 h20 vTobal12, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x22 y259 w80 h20 , ¿ì¶óÄ«
-Gui, Add, DropDownList, x102 y259 w40 h20 vTobal13, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x152 y259 w80 h20 , ÇÙ¼¼¸¶¸®
-Gui, Add, DropDownList, x232 y259 w40 h20 vTobal14, 1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
-Gui, Add, Text, x12 y99 w90 h20 , ÇöÀç»óÅÂ:
-Gui, Add, Text, x102 y99 w90 h20 vA, ¸ØÃã
+Gui, Add, Tab, x12 y139 w550 h150 , í† ë²Œ
+Gui, Add, Text, x22 y169 w80 h20 , ë¹¨ê°„ì½”
+Gui, Add, DropDownList, x102 y169 w40 h80 vTobal1, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x152 y169 w80 h20 , ê¸°ì•„ìŠ¤
+Gui, Add, DropDownList, x232 y169 w40 h80 vTobal2, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x282 y169 w80 h20 , ë¹„ê²í•œë² ê·¸
+Gui, Add, DropDownList, x362 y169 w40 h80 vTobal3, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x412 y169 w80 h20 , ì•Œë£¬ë””
+Gui, Add, DropDownList, x492 y169 w40 h80 vTobal4, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x22 y199 w80 h20 , í‹°í‹°ì›€
+Gui, Add, DropDownList, x102 y199 w40 h80 vTobal5, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x152 y199 w80 h20 , ë¨¸ìŠ¤ì¹¸
+Gui, Add, DropDownList, x232 y199 w40 h80 vTobal6, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x282 y199 w80 h20 , ì˜¤ë¥´ê·¸
+Gui, Add, DropDownList, x362 y199 w40 h80 vTobal7, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x412 y199 w80 h20 , ì¼ˆì¹´ìŠ¤
+Gui, Add, DropDownList, x492 y199 w40 h80 vTobal8, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x22 y229 w80 h20 , ê²€ì€ê°ˆê¸°
+Gui, Add, DropDownList, x102 y229 w40 h80 vTobal9, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x152 y229 w80 h20 , ì‚¬ìš°ë‹
+Gui, Add, DropDownList, x232 y229 w40 h80 vTobal10, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x282 y229 w80 h20 , ê²Œì•„ì¿ 
+Gui, Add, DropDownList, x362 y229 w40 h80 vTobal11, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x412 y229 w80 h20 , ì¿ ë² 
+Gui, Add, DropDownList, x492 y229 w40 h80 vTobal12, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x22 y259 w80 h20 , ìš°ë¼ì¹´
+Gui, Add, DropDownList, x102 y259 w40 h80 vTobal13, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x152 y259 w80 h20 , í•µì„¸ë§ˆë¦¬
+Gui, Add, DropDownList, x232 y259 w40 h80 vTobal14, 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25
+Gui, Add, Text, x12 y99 w90 h20 , í˜„ì¬ìƒíƒœ:
+Gui, Add, Text, x102 y99 w90 h20 vA, ë©ˆì¶¤
 Gui, Add, ListBox, x12 y300 w560 h120 vl_b
-Gui, Add, Button, x412 y99 w50 h20 vButton½ÃÀÛ, ½ÃÀÛ
-Gui, Add, Button, x462 y99 w50 h20 vButton¸ØÃã, ¸ØÃã
-Gui, Add, Button, x512 y99 w50 h20 vButtonÁ¾·á, Á¾·á
+Gui, Add, Button, x412 y99 w50 h20 vButtonì‹œì‘, ì‹œì‘
+Gui, Add, Button, x462 y99 w50 h20 vButtonë©ˆì¶¤, ë©ˆì¶¤
+Gui, Add, Button, x512 y99 w50 h20 vButtonì¢…ë£Œ, ì¢…ë£Œ
 
 Gui, Show
 
-;Ã¢ÀÌ¸§ ºÒ·¯¿À±â
+;ì°½ì´ë¦„ ë¶ˆëŸ¬ì˜¤ê¸°
 IniRead OutputVar, %A_ScriptDir%\setting.ini, WindowName, name
 GuiControl, , WinNmEdit,  %OutputVar%
-;Åä¹ú¼¼ÆÃ ºÒ·¯¿À±â
+;í† ë²Œì„¸íŒ… ë¶ˆëŸ¬ì˜¤ê¸°
 IniRead OutputVar, %A_ScriptDir%\setting.ini, Tobal, boss1
 GuiControl, ChooseString, Tobal1, %OutputVar%
 IniRead OutputVar, %A_ScriptDir%\setting.ini, Tobal, boss2
@@ -79,5 +79,16 @@ IniRead OutputVar, %A_ScriptDir%\setting.ini, Tobal, boss13
 GuiControl, ChooseString, Tobal13, %OutputVar%
 IniRead OutputVar, %A_ScriptDir%\setting.ini, Tobal, boss14
 GuiControl, ChooseString, Tobal14, %OutputVar%
+
+; ìˆ˜ì •ì˜µì…˜
+IniRead OutputVar, %A_ScriptDir%\setting.ini, Option, crystalSel
+GuiControl, ChooseString, crystalSel, %OutputVar%
+; ì•„ì´í…œë¨¹ì´ì˜µì…˜
+IniRead OutputVar, %A_ScriptDir%\setting.ini, Option, blackPixieEat
+GuiControl, ChooseString, blackPixieEat, %OutputVar%
+; í«ë¨¹ì´ì˜µì…˜
+IniRead OutputVar, %A_ScriptDir%\setting.ini, Option, petEatSel
+GuiControl, ChooseString, petEatSel, %OutputVar%
+
 
 

@@ -1,4 +1,4 @@
-; ·Î±× ½×±â
+; ë¡œê·¸ ìŒ“ê¸°
 printLog(vStr) {
 	formattime , nowtime,,HH:mm:ss
 	guicontrol ,,l_b, %nowtime% : %vStr% ||	

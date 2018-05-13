@@ -24,11 +24,12 @@ global repeat매크로시작 		; 자동사냥 반복문 true, false
 global 크자카매크로시작 		; 크자카 반복문 true, false
 global 토벌매크로시작 		; 토벌의뢰 반복문 true, false
 
-global repPoint 			; 사냥장소
 global IF_Start_GPS			; 시작위치
 global SelectStageNum 	; 토벌단계
 global petEat 			;펫먹이
 global crystal
+global gTobal1, gTobal2, gTobal3, gTobal4, gTobal5, gTobal6, gTobal7, gTobal8, gTobal9, gTobal10, gTobal11, gTobal12, gTobal13, gTobal14 ; 토벌단계
+
 coordmode,pixel,screen
 return 
 
@@ -42,10 +43,26 @@ Button시작:
 	IF_Start_GPS := StartGPS		;	시작위치_ 시작할 함수( ahk )를 정함.
 	PixieEatLimit := blackPixieEat	;	흑정령 먹이 제한 repeat에 있음
 	SelectStageNum  := suppressStage ;	토벌단계 받기
-	repPoint := repeatPoint 		; 	사냥장소
+	;repPoint := repeatPoint 		; 	사냥장소
 	petEat := petEatSel				; 펫먹이
 	crystal := crystalSel			; 수정합성
 	
+	; 토벌 단계 세팅
+	gTobal1 := Tobal1
+	gTobal2 := Tobal2
+	gTobal3 := Tobal3
+	gTobal4 := Tobal4
+	gTobal5 := Tobal5
+	gTobal6 := Tobal6
+	gTobal7 := Tobal7
+	gTobal8 := Tobal8
+	gTobal9 := Tobal9
+	gTobal10 := Tobal10
+	gTobal11 := Tobal11
+	gTobal12 := Tobal12
+	gTobal13 := Tobal13
+	gTobal14 := Tobal14
+		
 	WinGet,processId,ID,%WindowName%
 
 	setTimer, StartSearch, 1800000
@@ -88,6 +105,13 @@ Button종료:
 	IniWrite, %Tobal13%, %A_ScriptDir%\setting.ini, Tobal, boss13
 	IniWrite, %Tobal14%, %A_ScriptDir%\setting.ini, Tobal, boss14
 	
+	; 수정옵션
+	IniWrite, %crystalSel%, %A_ScriptDir%\setting.ini, Option, crystalSel
+	; 아이템먹이옵션
+	IniWrite, %blackPixieEat%, %A_ScriptDir%\setting.ini, Option, blackPixieEat
+	; 펫먹이옵션
+	IniWrite, %petEatSel%, %A_ScriptDir%\setting.ini, Option, petEatSel
+	
 	종료함수()
 }
 return
@@ -102,7 +126,7 @@ F2::
 	IF_Start_GPS := StartGPS		;	시작위치_ 시작할 함수( ahk )를 정함.
 	PixieEatLimit := blackPixieEat	;	흑정령 먹이 제한 repeat에 있음
 	SelectStageNum  := suppressStage ;	토벌단계 받기
-	repPoint := repeatPoint 		; 	사냥장소
+	;repPoint := repeatPoint 		; 	사냥장소
 	petEat := petEatSel				;펫먹이
 	crystal := crystalSel			; 수정합성
 

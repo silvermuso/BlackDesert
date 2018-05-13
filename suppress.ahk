@@ -1,13 +1,53 @@
-;~ Åä¹úÀÇ·Ú ahk
+;~ í† ë²Œì˜ë¢° ahk
 global NextStageCheckCnt := 1
 global CharacterStopCheckCnt := 1
-Åä¹ú½ÃÀÛ(){
-	;~ Åä¹úÀÔÀå
-	Åä¹úÀÔÀå()
+í† ë²Œì‹œì‘(){
+	;~ í† ë²Œì…ì¥
+	;WinGet,processId,ID,%WindowName%
+	global 
+	Gui, Submit, noHide
+
+	startTobal(gTobal1, "ë¹¨ê°„ì½”") 
+	startTobal(gTobal2, "ê¸°ì•„ìŠ¤")
+	startTobal(gTobal3, "ë¹„ê²í•œë² ê·¸")
+	startTobal(gTobal4, "ì•Œë£¬ë””")
+	startTobal(gTobal5, "í‹°í‹°ì›€")
+	startTobal(gTobal6, "ë¨¸ìŠ¤ì¹¸")
+	startTobal(gTobal7, "ì˜¤ë¥´ê·¸")
+	startTobal(gTobal8, "ì¼ˆì¹´ìŠ¤")
+	startTobal(gTobal9, "ê²€ì€ê°ˆê¸°")
+	startTobal(gTobal10, "ì‚¬ìš°ë‹ê³µì„±ëŒ€ì¥")
+	startTobal(gTobal11, "ê²Œì•„ì¿ ")
+	startTobal(gTobal12, "ì¿ ë² ")
+	startTobal(gTobal13, "ìš°ë¼ì¹´")
+	startTobal(gTobal14, "í•µì„¸ë§ˆë¦¬")
+			
+	; í† ë²Œ ë‚˜ê°€ê¸°
+	leftClick(1230,70,1)
+	sleep,1500
+
+	; ì˜ì§€ ë‚˜ê°€ê¸°
+	leftClick(960,70,1)
+	sleep,2000
+	
+	if(Search_img("Image\tobal\ì˜ì§€ë‚˜ê°€ê¸°í™•ì¸.bmp",processId,x,y,70)){
+		leftClick(x,y,1)
+		sleep,5000
+	}
+	
+	; ìë™ì‚¬ëƒ¥
+	leftClick(440,700,1)
+	sleep,1000
+
+	IF_Start_GPS := "ìë™ì‚¬ëƒ¥"
+	GuiControl, ChooseString, StartGPS, %IF_Start_GPS%
+
+	startGPS()
+	/*
 	NextStageCheck()
 
-	while(%Åä¹ú¸ÅÅ©·Î½ÃÀÛ% == true){
-		;~ Åä¹úÀÇ·Ú ´ÙÀ½´Ü°è Ã¼Å©
+	while(%í† ë²Œë§¤í¬ë¡œì‹œì‘% == true){
+		;~ í† ë²Œì˜ë¢° ë‹¤ìŒë‹¨ê³„ ì²´í¬
 		if(NextStageCheckCnt >= 30){
 			NextStageCheck()
 			NextStageCheckCnt = 0
@@ -23,79 +63,252 @@ global CharacterStopCheckCnt := 1
 		
 		sleep, 1000
 	}
-
+	*/
+	
 }
 
-;~ Åä¹úÀÇ·Ú ´ÙÀ½´Ü°è Ã¼Å© ÇÔ¼ö
+;~ í† ë²Œì˜ë¢° ë‹¤ìŒë‹¨ê³„ ì²´í¬ í•¨ìˆ˜
 NextStageCheck(){
 	WinGet,processId,ID,%WindowName%
 	
-	;~ ÀÓ¹«¼º°ø½Ã È®ÀÎ¹öÆ°
-	if(search_img_GPS("Image\tobal\Åä¹ú¿Ï·áÈ®ÀÎ.bmp",processId,x,y,50,Åä¹ú¿Ï·áÈ®ÀÎX1,Åä¹ú¿Ï·áÈ®ÀÎY1,Åä¹ú¿Ï·áÈ®ÀÎX2,Åä¹ú¿Ï·áÈ®ÀÎY2)){
+	;~ ì„ë¬´ì„±ê³µì‹œ í™•ì¸ë²„íŠ¼
+	if(search_img_GPS("Image\tobal\í† ë²Œì™„ë£Œí™•ì¸.bmp",processId,x,y,50,í† ë²Œì™„ë£Œí™•ì¸X1,í† ë²Œì™„ë£Œí™•ì¸Y1,í† ë²Œì™„ë£Œí™•ì¸X2,í† ë²Œì™„ë£Œí™•ì¸Y2)){
 		sleep, 400
-		;~ ´ÙÀ½´Ü°è Ã¼Å©
-		if(search_img_GPS("Image\tobal\2´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		;~ ë‹¤ìŒë‹¨ê³„ ì²´í¬
+		if(search_img_GPS("Image\tobal\2ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,2)
-		}else if(search_img_GPS("Image\tobal\3´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\3ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,3)
-		}else if(search_img_GPS("Image\tobal\4´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\4ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,4)
-		}else if(search_img_GPS("Image\tobal\5´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\5ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,5)
-		}else if(search_img_GPS("Image\tobal\6´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\6ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,6)
-		}else if(search_img_GPS("Image\tobal\7´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\7ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,7)
-		}else if(search_img_GPS("Image\tobal\8´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\8ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,8)
-		}else if(search_img_GPS("Image\tobal\9´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\9ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,9)
-		}else if(search_img_GPS("Image\tobal\10´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\10ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,10)
-		}else if(search_img_GPS("Image\tobal\11´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\11ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,11)
-		}else if(search_img_GPS("Image\tobal\12´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\12ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,12)
-		}else if(search_img_GPS("Image\tobal\13´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\13ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,13)
-		}else if(search_img_GPS("Image\tobal\14´Ü°è.bmp",processId,x,y,50,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+		}else if(search_img_GPS("Image\tobal\14ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 			NextClick(x,y,14)
 		}else{
 			NextClick(650,660,999)
 		}
 	}
-	;~ else if(search_img_GPS("Image\tobal\15´Ü°è.bmp",processId,x,y,100,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+	;~ else if(search_img_GPS("Image\tobal\15ë‹¨ê³„.bmp",processId,x,y,100,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 		;~ NextClick(x,y,15)
-	;~ }else if(search_img_GPS("Image\tobal\16´Ü°è.bmp",processId,x,y,100,Åä¹ú´ÙÀ½´Ü°èX1,Åä¹ú´ÙÀ½´Ü°èY1,Åä¹ú´ÙÀ½´Ü°èX2,Åä¹ú´ÙÀ½´Ü°èY2)){
+	;~ }else if(search_img_GPS("Image\tobal\16ë‹¨ê³„.bmp",processId,x,y,100,í† ë²Œë‹¤ìŒë‹¨ê³„X1,í† ë²Œë‹¤ìŒë‹¨ê³„Y1,í† ë²Œë‹¤ìŒë‹¨ê³„X2,í† ë²Œë‹¤ìŒë‹¨ê³„Y2)){
 		;~ NextClick(x,y,16)
 	;~ }
 }
-;~ ´ÙÀ½ ½ºÅ×ÀÌÁö¸¦ Å¬¸¯ÇÒÁö ¾ÈÇÒÁö¸¦ Á¤ÇÔ. ¼³Á¤ÇÑ ½ºÅ×ÀÌÁöº¸´Ù ³ôÀ¸¸é ÁßÁö
+;~ ë‹¤ìŒ ìŠ¤í…Œì´ì§€ë¥¼ í´ë¦­í• ì§€ ì•ˆí• ì§€ë¥¼ ì •í•¨. ì„¤ì •í•œ ìŠ¤í…Œì´ì§€ë³´ë‹¤ ë†’ìœ¼ë©´ ì¤‘ì§€
 NextClick(x,y,NextStageNum){
 	if(SelectStageNum >= NextStageNum){
-		;~ msgbox, ´ÙÀ½È®ÀÎ
+		;~ msgbox, ë‹¤ìŒí™•ì¸
 		leftClick(x,y,1)
 	}else{
-		;~ msgbox, Á¾·áÈ®ÀÎ
+		;~ msgbox, ì¢…ë£Œí™•ì¸
 		leftClick(650,660,1)
-		Åä¹ú¸ÅÅ©·Î½ÃÀÛ = false
+		í† ë²Œë§¤í¬ë¡œì‹œì‘ = false
 		return
 	}
 	sleep, 17000
-	;~ ÀÚµ¿»ç³ÉÅ¬¸¯
+	;~ ìë™ì‚¬ëƒ¥í´ë¦­
 	leftClick(442,700,1)
 }
+/*
+í† ë²Œì…ì¥(){
+	startTobal(gTobal1, "ë¹¨ê°„ì½”") 
+	startTobal(gTobal2, "ê¸°ì•„ìŠ¤")
+	startTobal(gTobal3, "ë¹„ê²í•œë² ê·¸")
+	startTobal(gTobal4, "ì•Œë£¬ë””")
+	startTobal(gTobal5, "í‹°í‹°ì›€")
+	startTobal(gTobal6, "ë¨¸ìŠ¤ì¹¸")
+	startTobal(gTobal7, "ì˜¤ë¥´ê·¸")
+	startTobal(gTobal8, "ì¼ˆì¹´ìŠ¤")
+	startTobal(gTobal9, "ê²€ì€ê°ˆê¸°")
+	startTobal(gTobal10, "ì‚¬ìš°ë‹ê³µì„±ëŒ€ì¥")
+	startTobal(gTobal11, "ê²Œì•„ì¿ ")
+	startTobal(gTobal12, "ì¿ ë² ")
+	startTobal(gTobal13, "ìš°ë¼ì¹´")
+	startTobal(gTobal14, "í•µì„¸ë§ˆë¦¬")
+}
+*/
 
-Åä¹úÀÔÀå(){
+;í† ë²Œ ëŒê¸°
+startTobal(psStage, psBossNm) {
 	WinGet,processId,ID,%WindowName%
+	find := false
 	
-	;~ Åä¹úÀÔÀåÈ®ÀÎ
-	if(search_img_GPS("Image\tobal\Åä¹úÀÔÀå.bmp",processId,x,y,50,Åä¹úÀÔÀåX1,Åä¹úÀÔÀåY1,Åä¹úÀÔÀåX2,Åä¹úÀÔÀåY2)){
+	; ë§¨ ì™¼ìª½ë³´ìŠ¤ë¡œ ë“œë˜ê·¸
+	while(true) {
+		MouseDragClick(400,590,950,590)
+		if(A_Index > 4) {
+			break
+		}
+	}	
+
+	if(psStage > 0) { ; ë¹¨ê°„ì½” í† ë²Œ ì‹œì‘	
+		Loop, 14 {
+
+			if(search_img_GPS("Image\tobal\ë„ì „.bmp",processId,x,y,50,0,540,238,600)){
+				leftCLick(x,y,1)
+			} else {
+				leftCLick(100,570,1)
+			}
+		
+			sleep,1000
+			
+			if(search_img("Image\tobal\" . psBossNm . ".bmp",processId,x,y,60)) {
+				find := true
+				sleep,1000
+				break
+			}
+			
+			if(search_img_GPS("Image\tobal\ë„ì „.bmp",processId,x,y,50,239,540,476,600)){
+				leftCLick(x,y,1)
+			} else {
+				leftCLick(339,570,1)
+			}	
+			
+			sleep,1000
+			
+			if(search_img("Image\tobal\" . psBossNm . ".bmp",processId,x,y,60)) {
+				find := true
+				sleep,1000
+				break
+			}
+					
+			if(search_img_GPS("Image\tobal\ë„ì „.bmp",processId,x,y,50,477,540,714,600)){
+				leftCLick(x,y,1)
+			} else {
+				leftCLick(577,570,1)
+			}	
+			
+			sleep,1000
+			
+			if(search_img("Image\tobal\" . psBossNm . ".bmp",processId,x,y,60)) {
+				find := true
+				sleep,1000
+				break
+			}
+				
+			
+			if(search_img_GPS("Image\tobal\ë„ì „.bmp",processId,x,y,50,715,540,952,600)){
+				leftCLick(x,y,1)
+			} else {
+				leftCLick(777,570,1)
+			}	
+			
+			sleep,1000
+				
+			if(search_img("Image\tobal\" . psBossNm . ".bmp",processId,x,y,60)) {
+				find := true
+				sleep,1000
+				break
+			}
+							
+			
+			if(search_img_GPS("Image\tobal\ë„ì „.bmp",processId,x,y,50,953,540,1280,600)){
+				leftCLick(x,y,1)
+			} else {
+				leftCLick(1077,570,1)
+			}	
+			
+			sleep,1000
+				
+			if(search_img_GPS("Image\tobal\" . psBossNm . ".bmp",processId,x,y,50,í† ë²Œë³´ìŠ¤X1,í† ë²Œë³´ìŠ¤Y1,í† ë²Œë³´ìŠ¤X2,í† ë²Œë³´ìŠ¤Y2)){	
+				find := true
+				sleep,1000
+				break
+			}
+							
+			;0 238, 476, 714, 952, 1190
+			;540 600		
+			MouseDragClick(952,600,239,600)
+			sleep,2000
+		}
+
+		; ì…ì¥ íšŸìˆ˜ 0 ì´ë©´ íŒ¨ìŠ¤
+		if(find) {
+			if(search_img_GPS("Image\tobal\ì´ˆê¸°ì…ì¥ê¶Œ0.bmp",processId,x,y,50,í† ë²Œì…ì¥X1,í† ë²Œì…ì¥Y1,í† ë²Œì…ì¥X2,í† ë²Œì…ì¥Y2)){
+				find := false
+			}
+		}
+
+		if(find){	
+			if(search_img_GPS("Image\tobal\í† ë²Œì…ì¥.bmp",processId,x,y,50,í† ë²Œì…ì¥X1,í† ë²Œì…ì¥Y1,í† ë²Œì…ì¥X2,í† ë²Œì…ì¥Y2)){
+				leftCLick(x,y,1)
+				sleep,2000
+				
+				Loop, 30 {
+					if(search_img_GPS("Image\tobal\" . psStage . "ë‹¨ê³„.bmp",processId,x,y,50,í† ë²Œì´ì „ë‹¨ê³„X1,í† ë²Œì´ì „ë‹¨ê³„Y1,í† ë²Œì´ì „ë‹¨ê³„X2,í† ë²Œì´ì „ë‹¨ê³„Y2)) {
+					
+						if(search_img_GPS("Image\tobal\ë°˜ë³µì¬ì‹œì‘.bmp",processId,x,y,50,í† ë²Œë°˜ë³µì¬ì‹œì‘X1,í† ë²Œë°˜ë³µì¬ì‹œì‘Y1,í† ë²Œë°˜ë³µì¬ì‹œì‘X2,í† ë²Œë°˜ë³µì¬ì‹œì‘Y2)) {	
+							leftClick(x,y,1)
+							sleep, 1000
+						}
+
+						if(search_img_GPS("Image\tobal\í† ë²Œì‹œì‘.bmp",processId,x,y,50,í† ë²Œì‹œì‘X1,í† ë²Œì‹œì‘Y1,í† ë²Œì‹œì‘X2,í† ë²Œì‹œì‘Y2)) {	
+							leftClick(x,y,1)
+							find := true
+							sleep, 1000
+							break
+						}						
+						
+					} else {
+						; ë‹¨ê³„ ë‚®ì¶¤
+						leftCLick(500,280,1)
+						sleep, 1000
+					}
+				}
+
+			}
+		}
+
+		while(find) {
+			
+			if(search_img_GPS("Image\tobal\ì…ì¥ê¶Œ0.bmp",processId,x,y,70,í† ë²Œì…ì¥ê¶ŒX1,í† ë²Œì…ì¥ê¶ŒY1,í† ë²Œì…ì¥ê¶ŒX2,í† ë²Œì…ì¥ê¶ŒY2)) {
+				if(search_img_GPS("Image\tobal\ê·¸ë§Œí•˜ê¸°.bmp",processId,x,y,70,ì¦‰ì‹œì¬ë„ì „X1,ì¦‰ì‹œì¬ë„ì „Y1,ì¦‰ì‹œì¬ë„ì „X2,ì¦‰ì‹œì¬ë„ì „Y2)) {
+					leftCLick(x,y,1)
+					sleep, 10000
+					break
+				}
+			}
+			
+			if(search_img_GPS("Image\tobal\ì¦‰ì‹œì¬ë„ì „.bmp",processId,x,y,70,ì¦‰ì‹œì¬ë„ì „X1,ì¦‰ì‹œì¬ë„ì „Y1,ì¦‰ì‹œì¬ë„ì „X2,ì¦‰ì‹œì¬ë„ì „Y2)) {
+				leftCLick(x,y,1)
+				sleep, 10000
+				
+				; ë©ˆì¶¤ ë°©ì§€
+				if(Search_img("Image\ê²Œì„íŒ¨ë“œ.bmp",processId,x,y,70)){
+					DragClick(x,y)
+				}
+			}
+		}	
+		
+	}	
+	
+}
+
+í† ë²Œìˆ˜í–‰() {
+	;~ í† ë²Œì…ì¥í™•ì¸
+	if(search_img_GPS("Image\tobal\í† ë²Œì…ì¥.bmp",processId,x,y,50,í† ë²Œì…ì¥X1,í† ë²Œì…ì¥Y1,í† ë²Œì…ì¥X2,í† ë²Œì…ì¥Y2)){
 		
 	sleep,10000
 		leftCLick(x,y,1)
 		sleep, 17000
-		;~ ÀÚµ¿»ç³ÉÅ¬¸¯
+		;~ ìë™ì‚¬ëƒ¥í´ë¦­
 		leftClick(442,700,1)
 	}
 }
