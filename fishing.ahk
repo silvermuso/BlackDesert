@@ -1,119 +1,119 @@
 global fishingCheck := true
 
-ë‚šì‹œ(){
+³¬½Ã(){
 	fishingStart()
 }
 fishingStart(){
 	WinGet,processId,ID,%WindowName%
 	;~ DragClick(160,560)
-	;~ ë‚šì‹œìœ„ì¹˜ì°¾ê¸°()
-	while(%fishingë§¤í¬ë¡œì‹œì‘% == true){
+	;~ ³¬½ÃÀ§Ä¡Ã£±â()
+	while(%fishing¸ÅÅ©·Î½ÃÀÛ% == true){
 		;~ MsgBox, 1
-		if(search_img_GPS("Image\fishing\ë‚šì‹œëŒ€1.bmp",processId,x,y,120,ë‚šì‹œëŒ€X1,ë‚šì‹œëŒ€Y1,ë‚šì‹œëŒ€X2,ë‚šì‹œëŒ€Y2)){
+		if(search_img_GPS("Image\fishing\³¬½Ã´ë1.bmp",processId,x,y,120,³¬½Ã´ëX1,³¬½Ã´ëY1,³¬½Ã´ëX2,³¬½Ã´ëY2)){
 			;~ MsgBox, 2
 			fishingClick(x,y)
-		}else if(search_img_GPS("Image\fishing\ë‚šì‹œëŒ€2.bmp",processId,x,y,120,ë‚šì‹œëŒ€X1,ë‚šì‹œëŒ€Y1,ë‚šì‹œëŒ€X2,ë‚šì‹œëŒ€Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬½Ã´ë2.bmp",processId,x,y,120,³¬½Ã´ëX1,³¬½Ã´ëY1,³¬½Ã´ëX2,³¬½Ã´ëY2)){
 			;~ MsgBox, 3
 			fishingClick(x,y)
-		}else if(search_img_GPS("Image\fishing\ë‚šì‹œëŒ€3.bmp",processId,x,y,120,ë‚šì‹œëŒ€X1,ë‚šì‹œëŒ€Y1,ë‚šì‹œëŒ€X2,ë‚šì‹œëŒ€Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬½Ã´ë3.bmp",processId,x,y,120,³¬½Ã´ëX1,³¬½Ã´ëY1,³¬½Ã´ëX2,³¬½Ã´ëY2)){
 			;~ MsgBox, 4
 			fishingClick(x,y)
-		}else if(search_img_GPS("Image\fishing\ë‚šì‹œëŒ€4.bmp",processId,x,y,120,ë‚šì‹œëŒ€X1,ë‚šì‹œëŒ€Y1,ë‚šì‹œëŒ€X2,ë‚šì‹œëŒ€Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬½Ã´ë4.bmp",processId,x,y,120,³¬½Ã´ëX1,³¬½Ã´ëY1,³¬½Ã´ëX2,³¬½Ã´ëY2)){
 			;~ MsgBox, 5
 			fishingClick(x,y)
-		}else if(search_img_GPS("Image\fishing\ë‚šì‹œëŒ€5.bmp",processId,x,y,120,ë‚šì‹œëŒ€X1,ë‚šì‹œëŒ€Y1,ë‚šì‹œëŒ€X2,ë‚šì‹œëŒ€Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬½Ã´ë5.bmp",processId,x,y,120,³¬½Ã´ëX1,³¬½Ã´ëY1,³¬½Ã´ëX2,³¬½Ã´ëY2)){
 			;~ MsgBox, 6
 			fishingClick(x,y)
 		}
 		;~ MsgBox, 7
 		tutorial_fishing()
-		if(Search_img("Image\fishing\ë¬´ê²Œì´ˆê³¼.bmp",processId,x,y,80)){
+		if(Search_img("Image\fishing\¹«°ÔÃÊ°ú.bmp",processId,x,y,80)){
 			leftClick(x,y,1)
-			ë¬´ê²Œì´ˆê³¼()
-		}else if(Search_img("Image\fishing\ë¬´ê²Œì´ˆê³¼2.bmp",processId,x,y,80)){
+			¹«°ÔÃÊ°ú()
+		}else if(Search_img("Image\fishing\¹«°ÔÃÊ°ú2.bmp",processId,x,y,80)){
 			leftClick(x,y,1)
-			ë¬´ê²Œì´ˆê³¼()
+			¹«°ÔÃÊ°ú()
 		}
 		if(%fishingCheck% == true){
-			ë‚šì‹œìœ„ì¹˜ì°¾ê¸°()
+			³¬½ÃÀ§Ä¡Ã£±â()
 		}
 		fishingCheck = true
 		sleep,4000
 	}
 }
-ë‚šì‹œìœ„ì¹˜ì°¾ê¸°(){
+³¬½ÃÀ§Ä¡Ã£±â(){
 	WinGet,processId,ID,%WindowName%
 	
-	leftClick(ìƒì¸ëª©ë¡ë²„íŠ¼X,ìƒì¸ëª©ë¡ë²„íŠ¼Y,1)
+	leftClick(»óÀÎ¸ñ·Ï¹öÆ°X,»óÀÎ¸ñ·Ï¹öÆ°Y,1)
 	sleep,700
-	;~ if(Search_img("Image\fishing\ìƒì¸í¼ì¹˜ê¸°1.bmp",processId,x,y,85)){
-	leftClick(ìƒì¸ëª©ë¡í¼ì¹˜ê¸°X,ìƒì¸ëª©ë¡í¼ì¹˜ê¸°Y,1)
+	;~ if(Search_img("Image\fishing\»óÀÎÆîÄ¡±â1.bmp",processId,x,y,85)){
+	leftClick(»óÀÎ¸ñ·ÏÆîÄ¡±âX,»óÀÎ¸ñ·ÏÆîÄ¡±âY,1)
 	sleep,700
-	;~ }else if(Search_img("Image\fishing\ìƒì¸í¼ì¹˜ê¸°2.bmp",processId,x,y,85)){
+	;~ }else if(Search_img("Image\fishing\»óÀÎÆîÄ¡±â2.bmp",processId,x,y,85)){
 		;~ leftClick(x,y,1)
-	;~ }else if(Search_img("Image\fishing\ìƒì¸í¼ì¹˜ê¸°3.bmp",processId,x,y,85)){
+	;~ }else if(Search_img("Image\fishing\»óÀÎÆîÄ¡±â3.bmp",processId,x,y,85)){
 		;~ leftClick(x,y,1)
 	;~ }
 	
-	if(search_img_GPS("Image\fishing\ë‚šì‹œìƒì¸1.bmp",processId,x,y,100,ìƒì¸ë¦¬ìŠ¤íŠ¸X1,ìƒì¸ë¦¬ìŠ¤íŠ¸Y1,ìƒì¸ë¦¬ìŠ¤íŠ¸X2,ìƒì¸ë¦¬ìŠ¤íŠ¸Y2)){
+	if(search_img_GPS("Image\fishing\³¬½Ã»óÀÎ1.bmp",processId,x,y,100,»óÀÎ¸®½ºÆ®X1,»óÀÎ¸®½ºÆ®Y1,»óÀÎ¸®½ºÆ®X2,»óÀÎ¸®½ºÆ®Y2)){
 		leftClick(x,y,1)
 		sleep,60000
-	}else if(search_img_GPS("Image\fishing\ë‚šì‹œìƒì¸2.bmp",processId,x,y,110,ìƒì¸ë¦¬ìŠ¤íŠ¸X1,ìƒì¸ë¦¬ìŠ¤íŠ¸Y1,ìƒì¸ë¦¬ìŠ¤íŠ¸X2,ìƒì¸ë¦¬ìŠ¤íŠ¸Y2)){
+	}else if(search_img_GPS("Image\fishing\³¬½Ã»óÀÎ2.bmp",processId,x,y,110,»óÀÎ¸®½ºÆ®X1,»óÀÎ¸®½ºÆ®Y1,»óÀÎ¸®½ºÆ®X2,»óÀÎ¸®½ºÆ®Y2)){
 		leftClick(x,y,1)
 		sleep,60000
 	}
 	
 	sleep,700
-	;~ if(Search_img("Image\fishing\ìƒì¸ì ‘ê¸°1.bmp",processId,x,y,85)){
-	leftClick(ìƒì¸ëª©ë¡ì ‘ê¸°X,ìƒì¸ëª©ë¡ì ‘ê¸°Y,1)
+	;~ if(Search_img("Image\fishing\»óÀÎÁ¢±â1.bmp",processId,x,y,85)){
+	leftClick(»óÀÎ¸ñ·ÏÁ¢±âX,»óÀÎ¸ñ·ÏÁ¢±âY,1)
 	
-	;~ }else if(Search_img("Image\fishing\ìƒì¸ì ‘ê¸°2.bmp",processId,x,y,85)){
+	;~ }else if(Search_img("Image\fishing\»óÀÎÁ¢±â2.bmp",processId,x,y,85)){
 		;~ leftClick(x,y,1)
 	;~ }
 	sleep,1000
 	DragClick(160,560)
 } 
-ë¬´ê²Œì´ˆê³¼(){
+¹«°ÔÃÊ°ú(){
 	WinGet,processId,ID,%WindowName%
 	sleep,60000
-	if(search_img_GPS("Image\ìƒì .bmp",processId,x,y,140,í–‰ë™X1,í–‰ë™Y1,í–‰ë™X2,í–‰ë™Y2)){
+	if(search_img_GPS("Image\»óÁ¡.bmp",processId,x,y,140,Çàµ¿X1,Çàµ¿Y1,Çàµ¿X2,Çàµ¿Y2)){
 		leftClick(x,y,1)
 		sleep,500
-	}else if(search_img_GPS("Image\ìƒì 2.bmp",processId,x,y,140,í–‰ë™X1,í–‰ë™Y1,í–‰ë™X2,í–‰ë™Y2)){
+	}else if(search_img_GPS("Image\»óÁ¡2.bmp",processId,x,y,140,Çàµ¿X1,Çàµ¿Y1,Çàµ¿X2,Çàµ¿Y2)){
 		leftClick(x,y,1)
 		sleep,500
 	}
-	if(search_img_GPS("Image\fishing\ë†ì–´.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\³ó¾î.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ê°ˆì¹˜.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\°¥Ä¡.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ê³ ë“±ì–´.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\°íµî¾î.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ë§ë‘¥ì–´.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\¸ÁµÕ¾î.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ë¬¸ì–´.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\¹®¾î.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ë²¤ìë¦¬.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\º¥ÀÚ¸®.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ë¶ˆê°€ì‚¬ë¦¬.bmp",processId,x,y,110,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\ºÒ°¡»ç¸®.bmp",processId,x,y,110,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ì‚¼ì¹˜.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\»ïÄ¡.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
-	if(search_img_GPS("Image\fishing\ì „ê°±ì´.bmp",processId,x,y,95,íŒ”ê¸°_ì•„ì´í…œì°½X1,íŒ”ê¸°_ì•„ì´í…œì°½Y1,íŒ”ê¸°_ì•„ì´í…œì°½X2,íŒ”ê¸°_ì•„ì´í…œì°½Y2)){
+	if(search_img_GPS("Image\fishing\Àü°»ÀÌ.bmp",processId,x,y,95,ÆÈ±â_¾ÆÀÌÅÛÃ¢X1,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1,ÆÈ±â_¾ÆÀÌÅÛÃ¢X2,ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2)){
 		sale(x,y)
 	}
 	sleep,500
 	leftClick(1230,70,1)
 	sleep,1500
-	ë‚šì‹œìœ„ì¹˜ì°¾ê¸°()
+	³¬½ÃÀ§Ä¡Ã£±â()
 	fishingCheck = false
 }
 sale(x,y){
@@ -130,19 +130,19 @@ fishingClick(x,y){
 	sleep,15000
 	Loop,8
 	{
-		if(search_img_GPS("Image\fishing\ë‚šê¸°1.bmp",processId,x,y,110,ë‚šê¸°ë¨¸ë¦¬ìœ„X1,ë‚šê¸°ë¨¸ë¦¬ìœ„Y1,ë‚šê¸°ë¨¸ë¦¬ìœ„X2,ë‚šê¸°ë¨¸ë¦¬ìœ„Y2)){
+		if(search_img_GPS("Image\fishing\³¬±â1.bmp",processId,x,y,110,³¬±â¸Ó¸®À§X1,³¬±â¸Ó¸®À§Y1,³¬±â¸Ó¸®À§X2,³¬±â¸Ó¸®À§Y2)){
 			break
-		}else if(search_img_GPS("Image\fishing\ë‚šê¸°2.bmp",processId,x,y,110,ë‚šê¸°ë¨¸ë¦¬ìœ„X1,ë‚šê¸°ë¨¸ë¦¬ìœ„Y1,ë‚šê¸°ë¨¸ë¦¬ìœ„X2,ë‚šê¸°ë¨¸ë¦¬ìœ„Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬±â2.bmp",processId,x,y,110,³¬±â¸Ó¸®À§X1,³¬±â¸Ó¸®À§Y1,³¬±â¸Ó¸®À§X2,³¬±â¸Ó¸®À§Y2)){
 			break
-		}else if(search_img_GPS("Image\fishing\ë‚šê¸°3.bmp",processId,x,y,110,ë‚šê¸°ë¨¸ë¦¬ìœ„X1,ë‚šê¸°ë¨¸ë¦¬ìœ„Y1,ë‚šê¸°ë¨¸ë¦¬ìœ„X2,ë‚šê¸°ë¨¸ë¦¬ìœ„Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬±â3.bmp",processId,x,y,110,³¬±â¸Ó¸®À§X1,³¬±â¸Ó¸®À§Y1,³¬±â¸Ó¸®À§X2,³¬±â¸Ó¸®À§Y2)){
 			break
-		}else if(search_img_GPS("Image\fishing\ë‚šê¸°4.bmp",processId,x,y,110,ë‚šê¸°ë¨¸ë¦¬ìœ„X1,ë‚šê¸°ë¨¸ë¦¬ìœ„Y1,ë‚šê¸°ë¨¸ë¦¬ìœ„X2,ë‚šê¸°ë¨¸ë¦¬ìœ„Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬±â4.bmp",processId,x,y,110,³¬±â¸Ó¸®À§X1,³¬±â¸Ó¸®À§Y1,³¬±â¸Ó¸®À§X2,³¬±â¸Ó¸®À§Y2)){
 			break
-		}else if(search_img_GPS("Image\fishing\ë‚šê¸°5.bmp",processId,x,y,110,ë‚šì‹œëŒ€X1,ë‚šì‹œëŒ€Y1,ë‚šì‹œëŒ€X2,ë‚šì‹œëŒ€Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬±â5.bmp",processId,x,y,110,³¬½Ã´ëX1,³¬½Ã´ëY1,³¬½Ã´ëX2,³¬½Ã´ëY2)){
 			break
-		}else if(search_img_GPS("Image\fishing\ë‚šê¸°6.bmp",processId,x,y,110,ë‚šê¸°ë¨¸ë¦¬ìœ„X1,ë‚šê¸°ë¨¸ë¦¬ìœ„Y1,ë‚šê¸°ë¨¸ë¦¬ìœ„X2,ë‚šê¸°ë¨¸ë¦¬ìœ„Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬±â6.bmp",processId,x,y,110,³¬±â¸Ó¸®À§X1,³¬±â¸Ó¸®À§Y1,³¬±â¸Ó¸®À§X2,³¬±â¸Ó¸®À§Y2)){
 			break
-		}else if(search_img_GPS("Image\fishing\ë‚šê¸°7.bmp",processId,x,y,110,ë‚šê¸°ë¨¸ë¦¬ìœ„X1,ë‚šê¸°ë¨¸ë¦¬ìœ„Y1,ë‚šê¸°ë¨¸ë¦¬ìœ„X2,ë‚šê¸°ë¨¸ë¦¬ìœ„Y2)){
+		}else if(search_img_GPS("Image\fishing\³¬±â7.bmp",processId,x,y,110,³¬±â¸Ó¸®À§X1,³¬±â¸Ó¸®À§Y1,³¬±â¸Ó¸®À§X2,³¬±â¸Ó¸®À§Y2)){
 			break
 		}
 		sleep,2000
@@ -157,15 +157,15 @@ fishingClick(x,y){
 tutorial_fishing(){
 	WinGet,processId,ID,%WindowName%
 	;~ tutorialCheck := false
-	;~ if(Search_img("Image\main_quest\íŠœí† ë¦¬ì–¼1.bmp",processId,x,y,120,íŠœí† ë¦¬ì–¼ì·¨ì†ŒX1,íŠœí† ë¦¬ì–¼ì·¨ì†ŒY1,íŠœí† ë¦¬ì–¼ì·¨ì†ŒX2,íŠœí† ë¦¬ì–¼ì·¨ì†ŒY2)){
+	;~ if(Search_img("Image\main_quest\Æ©Åä¸®¾ó1.bmp",processId,x,y,120,Æ©Åä¸®¾óÃë¼ÒX1,Æ©Åä¸®¾óÃë¼ÒY1,Æ©Åä¸®¾óÃë¼ÒX2,Æ©Åä¸®¾óÃë¼ÒY2)){
 		;~ tutorialCheck = true
-	;~ }else if(Search_img("Image\main_quest\íŠœí† ë¦¬ì–¼2.bmp",processId,x,y,120,íŠœí† ë¦¬ì–¼ì·¨ì†ŒX1,íŠœí† ë¦¬ì–¼ì·¨ì†ŒY1,íŠœí† ë¦¬ì–¼ì·¨ì†ŒX2,íŠœí† ë¦¬ì–¼ì·¨ì†ŒY2)){
+	;~ }else if(Search_img("Image\main_quest\Æ©Åä¸®¾ó2.bmp",processId,x,y,120,Æ©Åä¸®¾óÃë¼ÒX1,Æ©Åä¸®¾óÃë¼ÒY1,Æ©Åä¸®¾óÃë¼ÒX2,Æ©Åä¸®¾óÃë¼ÒY2)){
 		;~ tutorialCheck = true
 	;~ }
 	
 	;~ sleep,300
 	;~ if(%tutorialCheck% == true){
-		if(search_img_GPS("Image\main_quest\íŠœí† ë¦¬ì–¼ì·¨ì†Œ.bmp",processId,x,y,100,íŠœí† ë¦¬ì–¼ì·¨ì†ŒX1,íŠœí† ë¦¬ì–¼ì·¨ì†ŒY1,íŠœí† ë¦¬ì–¼ì·¨ì†ŒX2,íŠœí† ë¦¬ì–¼ì·¨ì†ŒY2)){
+		if(search_img_GPS("Image\main_quest\Æ©Åä¸®¾óÃë¼Ò.bmp",processId,x,y,100,Æ©Åä¸®¾óÃë¼ÒX1,Æ©Åä¸®¾óÃë¼ÒY1,Æ©Åä¸®¾óÃë¼ÒX2,Æ©Åä¸®¾óÃë¼ÒY2)){
 			;~ MsgBox,%x%, %y%
 			leftClick(x,y,1)
 		}

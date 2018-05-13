@@ -1,24 +1,24 @@
 
 
-ì‹œì‘ì„œì¹˜()
+½ÃÀÛ¼­Ä¡()
 {
 	WinGet,processId,ID,%WindowName%
 	Loop,3
 	{
-		if(Search_img("Image\ê²€ì€ì‚¬ë§‰ì´ë¯¸ì§€.bmp",processId,x,y,80)){
+		if(Search_img("Image\°ËÀº»ç¸·ÀÌ¹ÌÁö.bmp",processId,x,y,80)){
 			leftClick(x,y,2)
 			
-			ì´ìš©ì•½ê´€ì„œì¹˜()	
+			ÀÌ¿ë¾à°ü¼­Ä¡()	
 			
-			ê³„ì •ì‚¬ìš©í—ˆìš©()
+			°èÁ¤»ç¿ëÇã¿ë()
 			sleep, 30000
-			ê³„ì •ì„ íƒ()
+			°èÁ¤¼±ÅÃ()
 
-			ì„œë²„ì„ íƒ()
+			¼­¹ö¼±ÅÃ()
 			
-			ê´‘ê³ ì œê±°()
+			±¤°íÁ¦°Å()
 			
-			ì‹œì‘ë“œë˜ê·¸()
+			½ÃÀÛµå·¡±×()
 			
 			startGPS()
 			sleep,1000
@@ -30,11 +30,11 @@ StartSearch:
 	StartWhile()
 return 
 
-ì‹œì‘ë“œë˜ê·¸(){
+½ÃÀÛµå·¡±×(){
 	WinGet,processId,ID,%WindowName%
 	endCheck := false
 	while(1){
-		if(Search_img("Image\ê²Œì„íŒ¨ë“œ.bmp",processId,x,y,70)){
+		if(Search_img("Image\°ÔÀÓÆĞµå.bmp",processId,x,y,70)){
 			DragClick(x,y)
 			endCheck = true
 		}
@@ -43,61 +43,61 @@ return
 		}
 	}
 }
-ê´‘ê³ ì œê±°(){
+±¤°íÁ¦°Å(){
 	WinGet,processId,ID,%WindowName%
 	sleep, 14000
-	if(Search_img("Image\ì´ë²¤íŠ¸ê´‘ê³ .bmp",processId,x,y,80)){
+	if(Search_img("Image\ÀÌº¥Æ®±¤°í.bmp",processId,x,y,80)){
 		leftClick(x,y,1)
 		sleep,1000
 	}
-	if(Search_img("Image\ì¶œì„.bmp",processId,x,y,80)){
+	if(Search_img("Image\Ãâ¼®.bmp",processId,x,y,80)){
 		leftClick(x,y,1)
 		sleep,1000
 	}
 }
-ê³„ì •ì„ íƒ(){
+°èÁ¤¼±ÅÃ(){
 	WinGet,processId,ID,%WindowName%
 	
 	loop,3
 	{
-		if(Search_img("Image\ê³„ì •ì„ íƒ.bmp",processId,x,y,80)){
+		if(Search_img("Image\°èÁ¤¼±ÅÃ.bmp",processId,x,y,80)){
 			leftClick(x,y,2)
 			sleep,3000
 		}
 	}
 }
-ì´ìš©ì•½ê´€ì„œì¹˜(){
+ÀÌ¿ë¾à°ü¼­Ä¡(){
 	WinGet,processId,ID,%WindowName%
 	sleep, 9000
 	loop,3
 	{
-		if(Search_img("Image\ì´ìš©ì•½ê´€.bmp",processId,x,y,80)){
+		if(Search_img("Image\ÀÌ¿ë¾à°ü.bmp",processId,x,y,80)){
 			leftClick(x,y,2)
 			sleep,1500
 		}
-		if(Search_img("Image\ì´ìš©ì•½ê´€ë™ì˜.bmp",processId,x,y,80)){
+		if(Search_img("Image\ÀÌ¿ë¾à°üµ¿ÀÇ.bmp",processId,x,y,80)){
 			;~ MouseMove, x, y
 			leftClick(x,y,1)
 			sleep,700
 			next = 2
 		}
-		if(Search_img("Image\ì´ìš©ì•½ê´€í™•ì¸.bmp",processId,x,y,70)){
+		if(Search_img("Image\ÀÌ¿ë¾à°üÈ®ÀÎ.bmp",processId,x,y,70)){
 			leftClick(x,y,2)
 			break
 		}
 	}
 }
 return 
-ê³„ì •ì‚¬ìš©í—ˆìš©(){
+°èÁ¤»ç¿ëÇã¿ë(){
 	WinGet,processId,ID,%WindowName%
 	sleep,7000
 	loop,3
 	{
-		if(Search_img("Image\ê³„ì •ì‚¬ìš©í—ˆìš©.bmp",processId,x,y,80)){
+		if(Search_img("Image\°èÁ¤»ç¿ëÇã¿ë.bmp",processId,x,y,80)){
 			leftClick(x,y,1)
 			sleep,2500
 		}
-		if(Search_img("Image\êµ¬ê¸€ê³„ì •ì„ íƒ.bmp",processId,x,y,80)){
+		if(Search_img("Image\±¸±Û°èÁ¤¼±ÅÃ.bmp",processId,x,y,80)){
 			leftClick(x,y,1)
 			sleep,1500
 		}
@@ -106,17 +106,17 @@ return
 
 StartWhile(){
 	WinGet,processId,ID,%WindowName%
-	if(search_img_GPS("Image\ì‘ë‹µì—†ìŒíŒ…ê¹€.bmp",processId,x,y,80,ì‘ë‹µì—†ìŒíŒ…ê¹€X1,ì‘ë‹µì—†ìŒíŒ…ê¹€Y1,ì‘ë‹µì—†ìŒíŒ…ê¹€X2,ì‘ë‹µì—†ìŒíŒ…ê¹€Y2)){
-		leftClick(ì‘ë‹µì—†ìŒí™•ì¸X ,ì‘ë‹µì—†ìŒí™•ì¸Y,2)
+	if(search_img_GPS("Image\ÀÀ´ä¾øÀ½ÆÃ±è.bmp",processId,x,y,80,ÀÀ´ä¾øÀ½ÆÃ±èX1,ÀÀ´ä¾øÀ½ÆÃ±èY1,ÀÀ´ä¾øÀ½ÆÃ±èX2,ÀÀ´ä¾øÀ½ÆÃ±èY2)){
+		leftClick(ÀÀ´ä¾øÀ½È®ÀÎX ,ÀÀ´ä¾øÀ½È®ÀÎY,2)
 		sleep, 6000
-		ì‹œì‘ì„œì¹˜()
+		½ÃÀÛ¼­Ä¡()
 	}
 	
 }
 return 
 
 
-ì„œë²„ì„ íƒ(){
+¼­¹ö¼±ÅÃ(){
 	WinGet,processId,ID,%WindowName%
 	next := 0
 	;~ MsgBox, %x%, %y% ,%WindowName%
@@ -125,7 +125,7 @@ return
 		if(next == 0){
 			Loop,3
 			{
-				if(Search_img("Image\ì„œë²„ì„ íƒ.bmp",processId,x,y,60)){
+				if(Search_img("Image\¼­¹ö¼±ÅÃ.bmp",processId,x,y,60)){
 					leftClick(650,100,1)
 					;~ leftClick(x,y,1)
 					next = 3
@@ -135,7 +135,7 @@ return
 		}
 		;~ if(next == 1){
 			;~ sleep,1000
-			;~ if(Search_img("Image\ì„œë²„ì„ íƒ2.bmp",processId,x,y,90)){
+			;~ if(Search_img("Image\¼­¹ö¼±ÅÃ2.bmp",processId,x,y,90)){
 				;~ leftClick(x,y,1)
 				;~ next = 2
 			;~ }
@@ -147,8 +147,8 @@ return
 		;~ }
 		if(next ==3){
 			sleep,10000
-			;~ ì„œë²„ì´ë¦„
-			if(Search_img("Image\ìºë¦­í„°ì„ íƒ.bmp",processId,x,y,70)){
+			;~ ¼­¹öÀÌ¸§
+			if(Search_img("Image\Ä³¸¯ÅÍ¼±ÅÃ.bmp",processId,x,y,70)){
 				leftClick(x,y,3)
 				next = 4
 				break
@@ -159,12 +159,12 @@ return
 return 
 ServerSelect(){
 	WinGet,processId,ID,%WindowName%
-	if(Server == "í•˜ì´ë¸"){
-		if(Search_img("Image\í•˜ì´ë¸.bmp",processId,x,y,80)){
+	if(Server == "ÇÏÀÌµ¨"){
+		if(Search_img("Image\ÇÏÀÌµ¨.bmp",processId,x,y,80)){
 			leftClick(x,y,2)
 		}
-	}else if(Server == "ì¹¼í˜ì˜¨"){
-		if(Search_img("Image\ì¹¼í˜ì˜¨.bmp",processId,x,y,80)){
+	}else if(Server == "Ä®Æä¿Â"){
+		if(Search_img("Image\Ä®Æä¿Â.bmp",processId,x,y,80)){
 			leftClick(x,y,2)
 		}
 	}

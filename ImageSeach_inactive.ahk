@@ -44,7 +44,7 @@ MCode(ByRef code, hex)
 }
 
 F9::
-	ImageSearch_Inactive("ê³„ì‚°ê¸°","Calc.bmp")
+	ImageSearch_Inactive("°è»ê±â","Calc.bmp")
 	return
 
 Exit:
