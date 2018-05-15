@@ -13,15 +13,15 @@ global 크자카완료Y1 := 190
 global 크자카완료X2 := 990
 global 크자카완료Y2 := 325
 
-global 가까운마을이동X1 := 790
-global 가까운마을이동Y1 := 226
-global 가까운마을이동X2 := 1050
-global 가까운마을이동Y2 := 310
+global 가까운마을이동X1 := 554
+global 가까운마을이동Y1 := 188
+global 가까운마을이동X2 := 775
+global 가까운마을이동Y2 := 253
 
-global 사냥터이동X1 := 850
-global 사냥터이동Y1 := 360
-global 사냥터이동X2 := 1055
-global 사냥터이동Y2 := 450
+global 사냥터이동X1 := 880
+global 사냥터이동Y1 := 400
+global 사냥터이동X2 := 1010
+global 사냥터이동Y2 := 460
 
 global 특수메뉴X1 := 300
 global 특수메뉴Y1 := 45

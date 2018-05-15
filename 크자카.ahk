@@ -33,15 +33,16 @@
 			leftClick(450,700,1)
 		}else if(repeatYn=="Y"){
 			if(search_img_GPS("Image\world_boss\크자카 완료.bmp",processId,x,y,80,크자카완료X1,크자카완료Y1,크자카완료X2,크자카완료Y2)){
+				sleep,6000
 				leftClick(x,y,1)
-				break
+				크자카매크로시작 := false
 			}
 		}
 		
 		sleep,1500
 	}
+	sleep,14000
 }
-return
 
 크자카이동(traveltime,repeatYn){
 	WinGet,processId,ID,%WindowName%
@@ -65,6 +66,5 @@ return
 	
 	;~ 크자카 던전 입구 이동
 	sleep, %traveltime%
-	MouseDragClick_Timer(160,560,205,470,1500)
+	MouseDragClick_Timer(160,560,205,470,2000)
 }
-return 

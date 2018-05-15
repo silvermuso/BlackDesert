@@ -15,7 +15,7 @@ repeatAll(){
 	;~ }else{
 		;~ RepeatStartCnt++
 	;~ }
-
+	
 	if(RepeatEndCnt >= 3){
 		RepeatEnd()
 		RepeatEndCnt = 0
@@ -46,6 +46,7 @@ repeatAll(){
 	
 	if(blackPixieYn == "Y"){		
 		if(blackPixieCnt >= 300 ){
+			startPoint()
 			blackPixieRequest()
 			blackPixieCnt = 0
 		}else{
@@ -55,8 +56,10 @@ repeatAll(){
 }
 자동사냥시작(){
 	WinGet,processId,ID,%WindowName%
+	;~ startPoint()
 	;~ eat()
 	;~ go사냥터()
+	;~ pet()
 	Weight()
 	;~ petEatClick()
 	;~ Weight()
@@ -130,33 +133,57 @@ Weight_execute(){
 	
 		if(search_img_GPS("Image\무게_마을이동.bmp",processId,x,y,100,무게마을이동X1,무게마을이동Y1,무게마을이동X2,무게마을이동Y2)){
 			leftClick(x,y,1)
-			sleep,46000
+			sleep,15000
 		}else if(search_img_GPS("Image\repeat\무게_마을이동.bmp",processId,x,y,100,무게마을이동X1,무게마을이동Y1,무게마을이동X2,무게마을이동Y2)){
 			leftClick(x,y,1)
-			sleep,46000
+			sleep,15000
 		}else{
 			leftClick(640,120,1)
+			return 
 		}
-		if(search_img_GPS("Image\상점.bmp",processId,x,y,100,행동X1,행동Y1,행동X2,행동Y2)){
+		
+		leftClick(230,240,1)		;상인목록 탭
+		sleep,1000
+		leftClick(270,210,1)		;상인목록 펼치기
+		sleep,1000
+		;~ 물약상인에게 이동
+		if(search_img_GPS("Image\물약상점.bmp",processId,x,y,80,25,80,560,370)){
 			leftClick(x,y,1)
-			sleep,1300
-		}else if(search_img_GPS("Image\상점2.bmp",processId,x,y,100,행동X1,행동Y1,행동X2,행동Y2)){
-			leftClick(x,y,1)
-			sleep,1300
-		}else if(search_img_GPS("Image\상점3.bmp",processId,x,y,100,상점_2X1,상점_2Y1,상점_2X2,상점_2Y2)){
-			leftClick(x,y,1)
-			sleep,1300
-		}	
-		if(search_img_GPS("Image\전리품정리.bmp",processId,x,y,100,전리품정리X1,전리품정리Y1,전리품정리X2,전리품정리Y2)){
-			leftClick(x,y,1)
-			sleep,1000
-			leftClick(1220,70,1)
-			sleep,1500
-			Item_Leave()
-			sleep,2000
-			skill_up()
-			sleep,1500
-			crystalCompose()
+		}else{
+			leftClick(45,110,1)
+		}
+		;~ 상인목록축소
+		sleep,2000
+		leftClick(550,360,1)	
+
+		;~ 이동대기
+		sleep,25000
+		loop, 4
+		{
+			if(search_img_GPS("Image\상점.bmp",processId,x,y,100,행동X1,행동Y1,행동X2,행동Y2)){
+				leftClick(x,y,1)
+				sleep,1300
+			}else if(search_img_GPS("Image\상점2.bmp",processId,x,y,100,행동X1,행동Y1,행동X2,행동Y2)){
+				leftClick(x,y,1)
+				sleep,1300
+			}else if(search_img_GPS("Image\상점3.bmp",processId,x,y,100,상점_2X1,상점_2Y1,상점_2X2,상점_2Y2)){
+				leftClick(x,y,1)
+				sleep,1300
+			}	
+			if(search_img_GPS("Image\전리품정리.bmp",processId,x,y,100,전리품정리X1,전리품정리Y1,전리품정리X2,전리품정리Y2)){
+				leftClick(x,y,1)
+				sleep,1000
+				leftClick(1220,70,1)
+				sleep,1500
+				Item_Leave()
+				sleep,2000
+				skill_up()
+				sleep,1500
+				crystalCompose()
+				break
+			}else{
+				MouseDragClick(560,630,800,645)
+			}
 		}
 		
 		go사냥터()
@@ -175,13 +202,13 @@ go사냥터(){
 		leftClick(x,y,1)
 		sleep,500
 		크자카("Y")
-		sleep,14000
+		leftClick(330,70,1)
+		sleep,1500
 	}
 	;~ msgbox,2
 	;~ 사냥터로 이동하는 버튼이 보이지 않으면 무한루프를 하면서 찾는다. 찾는 도중엔 기본사냥터로 이동해서 사냥한다.
 	while(1){
-		leftClick(330,70,1)
-	    sleep, 1500
+		sleep,1500
 		if(search_img_GPS("Image\repeat\사냥터이동.bmp",processId,x,y,70,사냥터이동X1,사냥터이동Y1,사냥터이동X2,사냥터이동Y2)){
 			leftClick(x,y,1)
 			sleep, 1000*50
@@ -189,6 +216,8 @@ go사냥터(){
 			leftClick(420,680,1)
 			sleep,1000
 			break
+		}else{
+			leftClick(330,70,1)
 		}
 	}
 	;~ }
@@ -330,7 +359,6 @@ skill_up(){
 		cnt++
 	}
 	sleep, 500
-
 	leftClick(1230,70,1)
 	;~ 1140,640
 	;~ leftClick(1140,380,1)
@@ -600,20 +628,33 @@ petEatFurchase(){
 	WinGet,processId,ID,%WindowName%
 	
 	checkYn := "N"
+	크자카Yn := "N"
 	
 	sleep,1500
-	if(search_img_GPS("Image\repeat\마을가기마크.bmp",processId,x,y,70,특수메뉴X1,특수메뉴Y1,특수메뉴X2,특수메뉴Y2)){
+	leftClick(330,70,1)
+	sleep, 1500
+	if(search_img_GPS("Image\world_boss\크자카출정.bmp",processId,x,y,70,크자카출정X1,크자카출정Y1,크자카출정X2,크자카출정Y2)){
+		;~ msgbox,1
+		크자카Yn := "Y"
 		leftClick(x,y,1)
-		sleep,1000
-		if(search_img_GPS("Image\repeat\가까운마을이동.bmp",processId,x,y,50,가까운마을이동X1,가까운마을이동Y1,가까운마을이동X2,가까운마을이동Y2)){
-			leftClick(x,y,1)
-			checkYn := "Y"
-		}else{
-			leftClick(24,605,1)	;탐색 실패시 창닫기위한 다른곳 클릭(마우스 패드쪽)
-			checkYn := "N"
-		}
-		
+		sleep,500
+		크자카("Y")
 	}
+	
+	if( 크자카Yn == "Y"){
+		leftClick(330,70,1)
+		sleep,1500
+	}
+	
+	if(search_img_GPS("Image\repeat\가까운마을이동.bmp",processId,x,y,50,가까운마을이동X1,가까운마을이동Y1,가까운마을이동X2,가까운마을이동Y2)){
+		leftClick(x,y,1)
+		checkYn := "Y"
+	}else{
+		leftClick(24,605,1)	;탐색 실패시 창닫기위한 다른곳 클릭(마우스 패드쪽)
+		checkYn := "N"
+	}
+		
+
 	if(checkYn == "Y"){
 		sleep,9000
 		
@@ -721,4 +762,34 @@ blackPixieRequest(){
 		;~ msgbox, %blackPixieYn%
 	}
 	return
+}
+;~ 멈춤방지 . 자리이동시 월드보스 마크가 있다면 보스 잡으러, 없다면 자동사냥 시작위치로 이동.
+startPoint(){
+	WinGet,processId,ID,%WindowName%
+	world_bossYn :="N"
+	sleepTime := 1000*10
+	
+	leftClick(330,70,1)
+	sleep, 1500
+	if(search_img_GPS("Image\world_boss\크자카출정.bmp",processId,x,y,70,크자카출정X1,크자카출정Y1,크자카출정X2,크자카출정Y2)){
+		;~ msgbox,1
+		leftClick(x,y,1)
+		sleep,500
+		크자카("Y")
+		leftClick(330,70,1)
+		sleep,1500
+		world_bossYn := "Y"
+		sleepTime := 1000*120
+	}
+	
+	if(search_img_GPS("Image\repeat\사냥터이동.bmp",processId,x,y,70,사냥터이동X1,사냥터이동Y1,사냥터이동X2,사냥터이동Y2)){
+		leftClick(x,y,1)
+		sleep, %sleepTime%
+		if(world_bossYn == "Y"){
+			leftClick(420,680,1)
+		}
+		sleep,1000
+	}
+	sleep,2000
+	;~ }
 }
