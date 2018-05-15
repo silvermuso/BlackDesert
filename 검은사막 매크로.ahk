@@ -1,53 +1,53 @@
-#include Gdip.ahk		
+ï»¿#include Gdip.ahk		
 #include Gdip_ImageSearch.ahk
 #include Search_img.ahk		
-;~ ºñÈ°¼º ÀÌ¹ÌÁö ¼­Ä¡ Çì´õ
-#include desert_gui.ahk		; GUI Çì´õ
-#include MouseClick.ahk		; ¸¶¿ì½º Å¬¸¯ Çì´õ
-#include globalXY.ahk		; ¼­Ä¡ ÁÂÇ¥ Çì´õ (global º¯¼ö)
-#include common.ahk		    ; °øÅëÇÔ¼ö
+;~ ë¹„í™œì„± ì´ë¯¸ì§€ ì„œì¹˜ í—¤ë”
+#include desert_gui.ahk		; GUI í—¤ë”
+#include MouseClick.ahk		; ë§ˆìš°ìŠ¤ í´ë¦­ í—¤ë”
+#include globalXY.ahk		; ì„œì¹˜ ì¢Œí‘œ í—¤ë” (global ë³€ìˆ˜)
+#include common.ahk		    ; ê³µí†µí•¨ìˆ˜
 
-#include start_desert.ahk	; ½ÃÀÛ ½Ã ÂüÁ¶ Çì´õ ( ¸Ç¾Æ·¡ ÇÔ¼ö ) Æ¨°åÀ» ½Ã ÀçÁ¢¼Ó Å×½ºÆ® Áß
-#include Å©ÀÚÄ«.ahk			; ½ÃÀÛÀ§Ä¡ (Å©ÀÚÄ«) - Çì´õ
-#include repeat.ahk			; ½ÃÀÛÀ§Ä¡ (ÀÚµ¿»ç³É) - Çì´õ
-;~ #include repeatÅ×½ºÆ®.ahk	; ÀÚµ¿»ç³É Å×½ºÆ®
-#include fishing.ahk		; ½ÃÀÛÀ§Ä¡ (³«½Ã) - Çì´õ
-#include MQuest.ahk			; ½ÃÀÛÀ§Ä¡ (¸ŞÀÎÄù) - Çì´õ
-#include suppress.ahk		; ½ÃÀÛÀ§Ä¡ (Åä¹ú) - Çì´õ
+#include start_desert.ahk	; ì‹œì‘ ì‹œ ì°¸ì¡° í—¤ë” ( ë§¨ì•„ë˜ í•¨ìˆ˜ ) íŠ•ê²¼ì„ ì‹œ ì¬ì ‘ì† í…ŒìŠ¤íŠ¸ ì¤‘
+#include í¬ìì¹´.ahk			; ì‹œì‘ìœ„ì¹˜ (í¬ìì¹´) - í—¤ë”
+#include repeat.ahk			; ì‹œì‘ìœ„ì¹˜ (ìë™ì‚¬ëƒ¥) - í—¤ë”
+;~ #include repeatí…ŒìŠ¤íŠ¸.ahk	; ìë™ì‚¬ëƒ¥ í…ŒìŠ¤íŠ¸
+#include fishing.ahk		; ì‹œì‘ìœ„ì¹˜ (ë‚™ì‹œ) - í—¤ë”
+#include MQuest.ahk			; ì‹œì‘ìœ„ì¹˜ (ë©”ì¸í€˜) - í—¤ë”
+#include suppress.ahk		; ì‹œì‘ìœ„ì¹˜ (í† ë²Œ) - í—¤ë”
 
-global ¹İº¹È½¼ö := ¹İº¹È½¼ö
-global ÃÑÅ¬¸®¾îÈ½¼ö := 0
+global ë°˜ë³µíšŸìˆ˜ := ë°˜ë³µíšŸìˆ˜
+global ì´í´ë¦¬ì–´íšŸìˆ˜ := 0
 global PixieEatLimit 
-global fishing¸ÅÅ©·Î½ÃÀÛ		; ³¬½Ã ¹İº¹¹® true, false
-global main¸ÅÅ©·Î½ÃÀÛ 		; ¸ŞÀÎ Äù½ºÆ® ¹İº¹¹® true, false
-global repeat¸ÅÅ©·Î½ÃÀÛ 		; ÀÚµ¿»ç³É ¹İº¹¹® true, false
-global Å©ÀÚÄ«¸ÅÅ©·Î½ÃÀÛ 		; Å©ÀÚÄ« ¹İº¹¹® true, false
-global Åä¹ú¸ÅÅ©·Î½ÃÀÛ 		; Åä¹úÀÇ·Ú ¹İº¹¹® true, false
+global fishingë§¤í¬ë¡œì‹œì‘		; ë‚šì‹œ ë°˜ë³µë¬¸ true, false
+global mainë§¤í¬ë¡œì‹œì‘ 		; ë©”ì¸ í€˜ìŠ¤íŠ¸ ë°˜ë³µë¬¸ true, false
+global repeatë§¤í¬ë¡œì‹œì‘ 		; ìë™ì‚¬ëƒ¥ ë°˜ë³µë¬¸ true, false
+global í¬ìì¹´ë§¤í¬ë¡œì‹œì‘ 		; í¬ìì¹´ ë°˜ë³µë¬¸ true, false
+global í† ë²Œë§¤í¬ë¡œì‹œì‘ 		; í† ë²Œì˜ë¢° ë°˜ë³µë¬¸ true, false
 
-global IF_Start_GPS			; ½ÃÀÛÀ§Ä¡
-global SelectStageNum 	; Åä¹ú´Ü°è
-global petEat 			;Æê¸ÔÀÌ
+global IF_Start_GPS			; ì‹œì‘ìœ„ì¹˜
+global SelectStageNum 	; í† ë²Œë‹¨ê³„
+global petEat 			;í«ë¨¹ì´
 global crystal
-global gTobal1, gTobal2, gTobal3, gTobal4, gTobal5, gTobal6, gTobal7, gTobal8, gTobal9, gTobal10, gTobal11, gTobal12, gTobal13, gTobal14 ; Åä¹ú´Ü°è
+global gTobal1, gTobal2, gTobal3, gTobal4, gTobal5, gTobal6, gTobal7, gTobal8, gTobal9, gTobal10, gTobal11, gTobal12, gTobal13, gTobal14 ; í† ë²Œë‹¨ê³„
 
 coordmode,pixel,screen
 return 
 
-Button½ÃÀÛ:
+Buttonì‹œì‘:
 {
 	Gui, Submit, NoHide
-	GuiControl, , A, ½ÃÀÛ
+	GuiControl, , A, ì‹œì‘
 	
-	global WindowName := WinNmEdit	;	ÇÁ·Î¼¼½º ÀÌ¸§
-	;~ global Server := StartServer	;	¼­¹ö¼±ÅÃ_ Àç½ÃÀÛ½Ã »ç¿ë
-	IF_Start_GPS := StartGPS		;	½ÃÀÛÀ§Ä¡_ ½ÃÀÛÇÒ ÇÔ¼ö( ahk )¸¦ Á¤ÇÔ.
-	PixieEatLimit := blackPixieEat	;	ÈæÁ¤·É ¸ÔÀÌ Á¦ÇÑ repeat¿¡ ÀÖÀ½
-	SelectStageNum  := suppressStage ;	Åä¹ú´Ü°è ¹Ş±â
-	;repPoint := repeatPoint 		; 	»ç³ÉÀå¼Ò
-	petEat := petEatSel				; Æê¸ÔÀÌ
-	crystal := crystalSel			; ¼öÁ¤ÇÕ¼º
+	global WindowName := WinNmEdit	;	í”„ë¡œì„¸ìŠ¤ ì´ë¦„
+	;~ global Server := StartServer	;	ì„œë²„ì„ íƒ_ ì¬ì‹œì‘ì‹œ ì‚¬ìš©
+	IF_Start_GPS := StartGPS		;	ì‹œì‘ìœ„ì¹˜_ ì‹œì‘í•  í•¨ìˆ˜( ahk )ë¥¼ ì •í•¨.
+	PixieEatLimit := blackPixieEat	;	í‘ì •ë ¹ ë¨¹ì´ ì œí•œ repeatì— ìˆìŒ
+	SelectStageNum  := suppressStage ;	í† ë²Œë‹¨ê³„ ë°›ê¸°
+	;repPoint := repeatPoint 		; 	ì‚¬ëƒ¥ì¥ì†Œ
+	petEat := petEatSel				; í«ë¨¹ì´
+	crystal := crystalSel			; ìˆ˜ì •í•©ì„±
 	
-	; Åä¹ú ´Ü°è ¼¼ÆÃ
+	; í† ë²Œ ë‹¨ê³„ ì„¸íŒ…
 	gTobal1 := Tobal1
 	gTobal2 := Tobal2
 	gTobal3 := Tobal3
@@ -70,26 +70,26 @@ Button½ÃÀÛ:
 }
 
 return
-Button¸ØÃã:
+Buttonë©ˆì¶¤:
 {
 	Gui, Submit, noHide
-	GuiControl, , A, ¸ØÃã
+	GuiControl, , A, ë©ˆì¶¤
 	
-	fishing¸ÅÅ©·Î½ÃÀÛ = false
-	main¸ÅÅ©·Î½ÃÀÛ = false
-	repeat¸ÅÅ©·Î½ÃÀÛ = false
-	Å©ÀÚÄ«¸ÅÅ©·Î½ÃÀÛ = false
-	Åä¹ú¸ÅÅ©·Î½ÃÀÛ = false
+	fishingë§¤í¬ë¡œì‹œì‘ = false
+	mainë§¤í¬ë¡œì‹œì‘ = false
+	repeatë§¤í¬ë¡œì‹œì‘ = false
+	í¬ìì¹´ë§¤í¬ë¡œì‹œì‘ = false
+	í† ë²Œë§¤í¬ë¡œì‹œì‘ = false
 	SetTimer, StartSearch, Off 
 }
 return 
-ButtonÁ¾·á:
+Buttonì¢…ë£Œ:
 {
 	Gui, Submit, noHide
-	; ÇÁ·Î¼¼½ºÀÌ¸§
+	; í”„ë¡œì„¸ìŠ¤ì´ë¦„
 	IniWrite, %WinNmEdit%, %A_ScriptDir%\setting.ini, WindowName, name		
 	
-	; Åä¹ú
+	; í† ë²Œ
 	IniWrite, %Tobal1%, %A_ScriptDir%\setting.ini, Tobal, boss1
 	IniWrite, %Tobal2%, %A_ScriptDir%\setting.ini, Tobal, boss2
 	IniWrite, %Tobal3%, %A_ScriptDir%\setting.ini, Tobal, boss3
@@ -105,30 +105,30 @@ ButtonÁ¾·á:
 	IniWrite, %Tobal13%, %A_ScriptDir%\setting.ini, Tobal, boss13
 	IniWrite, %Tobal14%, %A_ScriptDir%\setting.ini, Tobal, boss14
 	
-	; ¼öÁ¤¿É¼Ç
+	; ìˆ˜ì •ì˜µì…˜
 	IniWrite, %crystalSel%, %A_ScriptDir%\setting.ini, Option, crystalSel
-	; ¾ÆÀÌÅÛ¸ÔÀÌ¿É¼Ç
+	; ì•„ì´í…œë¨¹ì´ì˜µì…˜
 	IniWrite, %blackPixieEat%, %A_ScriptDir%\setting.ini, Option, blackPixieEat
-	; Æê¸ÔÀÌ¿É¼Ç
+	; í«ë¨¹ì´ì˜µì…˜
 	IniWrite, %petEatSel%, %A_ScriptDir%\setting.ini, Option, petEatSel
 	
-	Á¾·áÇÔ¼ö()
+	ì¢…ë£Œí•¨ìˆ˜()
 }
 return
 
 F2::
 {
 	Gui, Submit, NoHide
-	GuiControl, , A, ½ÃÀÛ
+	GuiControl, , A, ì‹œì‘
 	
-	global WindowName := WinNmEdit	;	ÇÁ·Î¼¼½º ÀÌ¸§
-	;~ global Server := StartServer	;	¼­¹ö¼±ÅÃ_ Àç½ÃÀÛ½Ã »ç¿ë
-	IF_Start_GPS := StartGPS		;	½ÃÀÛÀ§Ä¡_ ½ÃÀÛÇÒ ÇÔ¼ö( ahk )¸¦ Á¤ÇÔ.
-	PixieEatLimit := blackPixieEat	;	ÈæÁ¤·É ¸ÔÀÌ Á¦ÇÑ repeat¿¡ ÀÖÀ½
-	SelectStageNum  := suppressStage ;	Åä¹ú´Ü°è ¹Ş±â
-	;repPoint := repeatPoint 		; 	»ç³ÉÀå¼Ò
-	petEat := petEatSel				;Æê¸ÔÀÌ
-	crystal := crystalSel			; ¼öÁ¤ÇÕ¼º
+	global WindowName := WinNmEdit	;	í”„ë¡œì„¸ìŠ¤ ì´ë¦„
+	;~ global Server := StartServer	;	ì„œë²„ì„ íƒ_ ì¬ì‹œì‘ì‹œ ì‚¬ìš©
+	IF_Start_GPS := StartGPS		;	ì‹œì‘ìœ„ì¹˜_ ì‹œì‘í•  í•¨ìˆ˜( ahk )ë¥¼ ì •í•¨.
+	PixieEatLimit := blackPixieEat	;	í‘ì •ë ¹ ë¨¹ì´ ì œí•œ repeatì— ìˆìŒ
+	SelectStageNum  := suppressStage ;	í† ë²Œë‹¨ê³„ ë°›ê¸°
+	;repPoint := repeatPoint 		; 	ì‚¬ëƒ¥ì¥ì†Œ
+	petEat := petEatSel				;í«ë¨¹ì´
+	crystal := crystalSel			; ìˆ˜ì •í•©ì„±
 
 	WinGet,processId,ID,%WindowName%
 
@@ -139,28 +139,28 @@ return
 F3::
 {
 	Gui, Submit, noHide
-	GuiControl, , A, ¸ØÃã
+	GuiControl, , A, ë©ˆì¶¤
 	
-	fishing¸ÅÅ©·Î½ÃÀÛ = false
-	main¸ÅÅ©·Î½ÃÀÛ = false
-	repeat¸ÅÅ©·Î½ÃÀÛ = false
-	Å©ÀÚÄ«¸ÅÅ©·Î½ÃÀÛ = false
-	Åä¹ú¸ÅÅ©·Î½ÃÀÛ = false
+	fishingë§¤í¬ë¡œì‹œì‘ = false
+	mainë§¤í¬ë¡œì‹œì‘ = false
+	repeatë§¤í¬ë¡œì‹œì‘ = false
+	í¬ìì¹´ë§¤í¬ë¡œì‹œì‘ = false
+	í† ë²Œë§¤í¬ë¡œì‹œì‘ = false
 	SetTimer, StartSearch, Off 
 }
 return
 F4::
 {
-	Á¾·áÇÔ¼ö()
+	ì¢…ë£Œí•¨ìˆ˜()
 }
 return 
 
-Á¾·áÇÔ¼ö()
+ì¢…ë£Œí•¨ìˆ˜()
 {
-	¸ÅÅ©·Î½ÃÀÛ :=false
+	ë§¤í¬ë¡œì‹œì‘ :=false
 	
 	Gui, Submit, noHide
-	GuiControl, , A, ¸ØÃã
+	GuiControl, , A, ë©ˆì¶¤
 	
 	ExitApp
 }
@@ -169,28 +169,28 @@ return
 
 startGPS(){
 	
-	if(IF_Start_GPS == "°ÔÀÓ½ÃÀÛ"){
-		½ÃÀÛ¼­Ä¡()
-	}else if(IF_Start_GPS == "¼­¹ö¼±ÅÃ"){
-		¼­¹ö¼±ÅÃ()
-	}else if(IF_Start_GPS == "ÀÚµ¿»ç³É"){
-		repeat¸ÅÅ©·Î½ÃÀÛ = true
-		Å©ÀÚÄ«¸ÅÅ©·Î½ÃÀÛ = true
-		ÀÚµ¿»ç³É½ÃÀÛ()
-	}else if(IF_Start_GPS == "±¤°íÁ¦°Å"){
-		±¤°íÁ¦°Å()
-	}else if(IF_Start_GPS == "¸ŞÀÎÄù"){
-		main¸ÅÅ©·Î½ÃÀÛ = true
-		¸ŞÀÎÄù()
-	}else if(IF_Start_GPS == "³¬½Ã"){
-		fishing¸ÅÅ©·Î½ÃÀÛ = true
-		³¬½Ã()
-	}else if(IF_Start_GPS == "Å©ÀÚÄ«"){
-		Å©ÀÚÄ«¸ÅÅ©·Î½ÃÀÛ = true
-		Å©ÀÚÄ«("N")
-	}else if(IF_Start_GPS == "Åä¹ú"){
-		Åä¹ú¸ÅÅ©·Î½ÃÀÛ = true
-		Åä¹ú½ÃÀÛ()
+	if(IF_Start_GPS == "ê²Œì„ì‹œì‘"){
+		ì‹œì‘ì„œì¹˜()
+	}else if(IF_Start_GPS == "ì„œë²„ì„ íƒ"){
+		ì„œë²„ì„ íƒ()
+	}else if(IF_Start_GPS == "ìë™ì‚¬ëƒ¥"){
+		repeatë§¤í¬ë¡œì‹œì‘ = true
+		í¬ìì¹´ë§¤í¬ë¡œì‹œì‘ = true
+		ìë™ì‚¬ëƒ¥ì‹œì‘()
+	}else if(IF_Start_GPS == "ê´‘ê³ ì œê±°"){
+		ê´‘ê³ ì œê±°()
+	}else if(IF_Start_GPS == "ë©”ì¸í€˜"){
+		mainë§¤í¬ë¡œì‹œì‘ = true
+		ë©”ì¸í€˜()
+	}else if(IF_Start_GPS == "ë‚šì‹œ"){
+		fishingë§¤í¬ë¡œì‹œì‘ = true
+		ë‚šì‹œ()
+	}else if(IF_Start_GPS == "í¬ìì¹´"){
+		í¬ìì¹´ë§¤í¬ë¡œì‹œì‘ = true
+		í¬ìì¹´("N")
+	}else if(IF_Start_GPS == "í† ë²Œ"){
+		í† ë²Œë§¤í¬ë¡œì‹œì‘ = true
+		í† ë²Œì‹œì‘()
 	}
 }
 

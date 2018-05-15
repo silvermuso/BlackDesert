@@ -1,6 +1,6 @@
 
-;~ ---------------------------------------------------------------------------------------------¸¶¿ì½º
-; ºñÈ°¼º ¸¶¿ì½º Å¬¸¯ ÇÔ¼ö
+;~ ---------------------------------------------------------------------------------------------ë§ˆìš°ìŠ¤
+; ë¹„í™œì„± ë§ˆìš°ìŠ¤ í´ë¦­ í•¨ìˆ˜
 leftClick(cX, cY,clickcnt) {
 	;~ coordMode, mouse, Window
 	
@@ -19,7 +19,7 @@ leftClick(cX, cY,clickcnt) {
 	}
 }
 
-; ºñÈ°¼º ¸¶¿ì½º Å¬¸¯ ÇÔ¼ö
+; ë¹„í™œì„± ë§ˆìš°ìŠ¤ í´ë¦­ í•¨ìˆ˜
 leftingClick(cX, cY) {
 	
 	innerX := cX 
@@ -32,7 +32,7 @@ leftingClick(cX, cY) {
 	
 }
 
-; ºñÈ°¼º ¸¶¿ì½º µå·¡±× ÇÔ¼ö (³¬½Ã¿ë?)
+; ë¹„í™œì„± ë§ˆìš°ìŠ¤ ë“œë˜ê·¸ í•¨ìˆ˜ (ë‚šì‹œìš©?)
 DragClick(cX, cY) {
 	;~ coordMode, mouse, %WindowName%
 	innerX := cX 
@@ -64,15 +64,15 @@ MouseDragClick(x1,y1,x2,y2){
 	tempX := % innerX1
 	tempY := % innerY1
 	
-	µå·¡±×¹İº¹X := true
-	µå·¡±×¹İº¹Y := true
+	ë“œë˜ê·¸ë°˜ë³µX := true
+	ë“œë˜ê·¸ë°˜ë³µY := true
 	SetControlDelay -1
 	controlClick , x%innerX1% y%innerY1%,%WindowName%,,left,1,D NA
-	while(µå·¡±×¹İº¹X or µå·¡±×¹İº¹Y){
+	while(ë“œë˜ê·¸ë°˜ë³µX or ë“œë˜ê·¸ë°˜ë³µY){
 		if(innerX1 < innerX2){
 			if(tempX >= innerX2){
 				;~ MsgBox,1
-				µå·¡±×¹İº¹X = % false
+				ë“œë˜ê·¸ë°˜ë³µX = % false
 			}else{
 				;~ MsgBox,2
 				tempX = % tempX + 10
@@ -80,7 +80,7 @@ MouseDragClick(x1,y1,x2,y2){
 		}else{
 			if(tempX <= innerX2){
 				;~ MsgBox,6
-				µå·¡±×¹İº¹X = % false
+				ë“œë˜ê·¸ë°˜ë³µX = % false
 			}else{
 				;~ MsgBox,3
 				tempX = % tempX - 10
@@ -89,7 +89,7 @@ MouseDragClick(x1,y1,x2,y2){
 		if(innerY1 < innerY2){
 			if(tempY >= innerY2){
 				;~ MsgBox,7
-				µå·¡±×¹İº¹Y = % false
+				ë“œë˜ê·¸ë°˜ë³µY = % false
 			}else{
 				;~ MsgBox,4
 				tempY = % tempY + 10
@@ -97,8 +97,8 @@ MouseDragClick(x1,y1,x2,y2){
 		}else{
 			if(tempY <= innerY2){
 				;~ MsgBox,8
-				µå·¡±×¹İº¹Y = % false
-				;~ MsgBox, ²ı
+				ë“œë˜ê·¸ë°˜ë³µY = % false
+				;~ MsgBox, ë—
 			}else{
 				;~ MsgBox,5
 				tempY = % tempY - 10
@@ -121,15 +121,15 @@ MouseDragClick_Timer(x1,y1,x2,y2,timer){
 	tempX := % innerX1
 	tempY := % innerY1
 	
-	µå·¡±×¹İº¹X := true
-	µå·¡±×¹İº¹Y := true
+	ë“œë˜ê·¸ë°˜ë³µX := true
+	ë“œë˜ê·¸ë°˜ë³µY := true
 	SetControlDelay -1
 	controlClick , x%innerX1% y%innerY1%,%WindowName%,,left,1,D NA
-	while(µå·¡±×¹İº¹X or µå·¡±×¹İº¹Y){
+	while(ë“œë˜ê·¸ë°˜ë³µX or ë“œë˜ê·¸ë°˜ë³µY){
 		if(innerX1 < innerX2){
 			if(tempX >= innerX2){
 				;~ MsgBox,1
-				µå·¡±×¹İº¹X = % false
+				ë“œë˜ê·¸ë°˜ë³µX = % false
 			}else{
 				;~ MsgBox,2
 				tempX = % tempX + 10
@@ -137,7 +137,7 @@ MouseDragClick_Timer(x1,y1,x2,y2,timer){
 		}else{
 			if(tempX <= innerX2){
 				;~ MsgBox,6
-				µå·¡±×¹İº¹X = % false
+				ë“œë˜ê·¸ë°˜ë³µX = % false
 			}else{
 				;~ MsgBox,3
 				tempX = % tempX - 10
@@ -146,7 +146,7 @@ MouseDragClick_Timer(x1,y1,x2,y2,timer){
 		if(innerY1 < innerY2){
 			if(tempY >= innerY2){
 				;~ MsgBox,7
-				µå·¡±×¹İº¹Y = % false
+				ë“œë˜ê·¸ë°˜ë³µY = % false
 			}else{
 				;~ MsgBox,4
 				tempY = % tempY + 10
@@ -154,8 +154,8 @@ MouseDragClick_Timer(x1,y1,x2,y2,timer){
 		}else{
 			if(tempY <= innerY2){
 				;~ MsgBox,8
-				µå·¡±×¹İº¹Y = % false
-				;~ MsgBox, ²ı
+				ë“œë˜ê·¸ë°˜ë³µY = % false
+				;~ MsgBox, ë—
 			}else{
 				;~ MsgBox,5
 				tempY = % tempY - 10
