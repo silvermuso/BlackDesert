@@ -1,311 +1,311 @@
-global ¾ÆÀÌÅÛ»óÀÚX1 := 372
-global ¾ÆÀÌÅÛ»óÀÚY1 := 140
-global ¾ÆÀÌÅÛ»óÀÚX2 := 1215
-global ¾ÆÀÌÅÛ»óÀÚY2 := 670
+global ì•„ì´í…œìƒìžX1 := 372
+global ì•„ì´í…œìƒìžY1 := 140
+global ì•„ì´í…œìƒìžX2 := 1215
+global ì•„ì´í…œìƒìžY2 := 670
 
-global Å©ÀÚÄ«ÃâÁ¤X1 := 580
-global Å©ÀÚÄ«ÃâÁ¤Y1 := 580
-global Å©ÀÚÄ«ÃâÁ¤X2 := 740
-global Å©ÀÚÄ«ÃâÁ¤Y2 := 650
+global í¬ìžì¹´ì¶œì •X1 := 580
+global í¬ìžì¹´ì¶œì •Y1 := 580
+global í¬ìžì¹´ì¶œì •X2 := 740
+global í¬ìžì¹´ì¶œì •Y2 := 650
 
-global Å©ÀÚÄ«¿Ï·áX1 := 590
-global Å©ÀÚÄ«¿Ï·áY1 := 190
-global Å©ÀÚÄ«¿Ï·áX2 := 990
-global Å©ÀÚÄ«¿Ï·áY2 := 325
+global í¬ìžì¹´ì™„ë£ŒX1 := 590
+global í¬ìžì¹´ì™„ë£ŒY1 := 190
+global í¬ìžì¹´ì™„ë£ŒX2 := 990
+global í¬ìžì¹´ì™„ë£ŒY2 := 325
 
-global °¡±î¿î¸¶À»ÀÌµ¿X1 := 790
-global °¡±î¿î¸¶À»ÀÌµ¿Y1 := 226
-global °¡±î¿î¸¶À»ÀÌµ¿X2 := 1050
-global °¡±î¿î¸¶À»ÀÌµ¿Y2 := 310
+global ê°€ê¹Œìš´ë§ˆì„ì´ë™X1 := 554
+global ê°€ê¹Œìš´ë§ˆì„ì´ë™Y1 := 188
+global ê°€ê¹Œìš´ë§ˆì„ì´ë™X2 := 775
+global ê°€ê¹Œìš´ë§ˆì„ì´ë™Y2 := 253
 
-global »ç³ÉÅÍÀÌµ¿X1 := 850
-global »ç³ÉÅÍÀÌµ¿Y1 := 360
-global »ç³ÉÅÍÀÌµ¿X2 := 1055
-global »ç³ÉÅÍÀÌµ¿Y2 := 450
+global ì‚¬ëƒ¥í„°ì´ë™X1 := 880
+global ì‚¬ëƒ¥í„°ì´ë™Y1 := 400
+global ì‚¬ëƒ¥í„°ì´ë™X2 := 1010
+global ì‚¬ëƒ¥í„°ì´ë™Y2 := 460
 
-global Æ¯¼ö¸Þ´ºX1 := 300
-global Æ¯¼ö¸Þ´ºY1 := 45
-global Æ¯¼ö¸Þ´ºX2 := 500
-global Æ¯¼ö¸Þ´ºY2 := 240
+global íŠ¹ìˆ˜ë©”ë‰´X1 := 300
+global íŠ¹ìˆ˜ë©”ë‰´Y1 := 45
+global íŠ¹ìˆ˜ë©”ë‰´X2 := 500
+global íŠ¹ìˆ˜ë©”ë‰´Y2 := 240
 
-global Æê¸ÔÀÌ¾Ë¸²X1 := 580
-global Æê¸ÔÀÌ¾Ë¸²Y1 := 600
-global Æê¸ÔÀÌ¾Ë¸²X2 := 700
-global Æê¸ÔÀÌ¾Ë¸²Y2 := 670
+global íŽ«ë¨¹ì´ì•Œë¦¼X1 := 580
+global íŽ«ë¨¹ì´ì•Œë¦¼Y1 := 600
+global íŽ«ë¨¹ì´ì•Œë¦¼X2 := 700
+global íŽ«ë¨¹ì´ì•Œë¦¼Y2 := 670
 
-global ±¤°íÁ¾·áX1 := 1175
-global ±¤°íÁ¾·áY1 := 75
-global ±¤°íÁ¾·áX2 := 1214
-global ±¤°íÁ¾·áY2 := 113
+global ê´‘ê³ ì¢…ë£ŒX1 := 1175
+global ê´‘ê³ ì¢…ë£ŒY1 := 75
+global ê´‘ê³ ì¢…ë£ŒX2 := 1214
+global ê´‘ê³ ì¢…ë£ŒY2 := 113
 
-global Ãâ¼®Á¾·áX1 := 1175
-global Ãâ¼®Á¾·áY1 := 121
-global Ãâ¼®Á¾·áX2 := 1252
-global Ãâ¼®Á¾·áY2 := 185
+global ì¶œì„ì¢…ë£ŒX1 := 1175
+global ì¶œì„ì¢…ë£ŒY1 := 121
+global ì¶œì„ì¢…ë£ŒX2 := 1252
+global ì¶œì„ì¢…ë£ŒY2 := 185
 
-global ³ª°¡±âX1 := 1180
-global ³ª°¡±âY1 := 40
-global ³ª°¡±âX2 := 1280
-global ³ª°¡±âY2 := 100
+global ë‚˜ê°€ê¸°X1 := 1180
+global ë‚˜ê°€ê¸°Y1 := 40
+global ë‚˜ê°€ê¸°X2 := 1280
+global ë‚˜ê°€ê¸°Y2 := 100
 
-global ¸»¾ÆÀÌÅÛÃ¢X1 := 855
-global ¸»¾ÆÀÌÅÛÃ¢Y1 := 275
-global ¸»¾ÆÀÌÅÛÃ¢X2 := 1265
-global ¸»¾ÆÀÌÅÛÃ¢Y2 := 580
+global ë§ì•„ì´í…œì°½X1 := 855
+global ë§ì•„ì´í…œì°½Y1 := 275
+global ë§ì•„ì´í…œì°½X2 := 1265
+global ë§ì•„ì´í…œì°½Y2 := 580
 
-global Åä¹úÀÔÀåX1 := 780
-global Åä¹úÀÔÀåY1 := 400
-global Åä¹úÀÔÀåX2 := 1050
-global Åä¹úÀÔÀåY2 := 500
+global í† ë²Œìž…ìž¥X1 := 780
+global í† ë²Œìž…ìž¥Y1 := 400
+global í† ë²Œìž…ìž¥X2 := 1050
+global í† ë²Œìž…ìž¥Y2 := 500
 
-global Åä¹ú¿Ï·áÈ®ÀÎX1 := 530
-global Åä¹ú¿Ï·áÈ®ÀÎY1 := 650
-global Åä¹ú¿Ï·áÈ®ÀÎX2 := 575
-global Åä¹ú¿Ï·áÈ®ÀÎY2 := 705
+global í† ë²Œì™„ë£Œí™•ì¸X1 := 530
+global í† ë²Œì™„ë£Œí™•ì¸Y1 := 650
+global í† ë²Œì™„ë£Œí™•ì¸X2 := 575
+global í† ë²Œì™„ë£Œí™•ì¸Y2 := 705
 
-global Åä¹úÀÌÀü´Ü°èX1 := 550
-global Åä¹úÀÌÀü´Ü°èY1 := 230
-global Åä¹úÀÌÀü´Ü°èX2 := 700
-global Åä¹úÀÌÀü´Ü°èY2 := 340
+global í† ë²Œì´ì „ë‹¨ê³„X1 := 550
+global í† ë²Œì´ì „ë‹¨ê³„Y1 := 230
+global í† ë²Œì´ì „ë‹¨ê³„X2 := 700
+global í† ë²Œì´ì „ë‹¨ê³„Y2 := 340
 
-global Åä¹ú´ÙÀ½´Ü°èX1 := 800
-global Åä¹ú´ÙÀ½´Ü°èY1 := 660
-global Åä¹ú´ÙÀ½´Ü°èX2 := 925
-global Åä¹ú´ÙÀ½´Ü°èY2 := 700
+global í† ë²Œë‹¤ìŒë‹¨ê³„X1 := 800
+global í† ë²Œë‹¤ìŒë‹¨ê³„Y1 := 660
+global í† ë²Œë‹¤ìŒë‹¨ê³„X2 := 925
+global í† ë²Œë‹¤ìŒë‹¨ê³„Y2 := 700
 
-global Åä¹úÀçµµÀüX1 := 365
-global Åä¹úÀçµµÀüY1 := 650
-global Åä¹úÀçµµÀüX2 := 480
-global Åä¹úÀçµµÀüY2 := 700
+global í† ë²Œìž¬ë„ì „X1 := 365
+global í† ë²Œìž¬ë„ì „Y1 := 650
+global í† ë²Œìž¬ë„ì „X2 := 480
+global í† ë²Œìž¬ë„ì „Y2 := 700
 
-global Åä¹úº¸½ºX1 := 620
-global Åä¹úº¸½ºY1 := 120
-global Åä¹úº¸½ºX2 := 1080
-global Åä¹úº¸½ºY2 := 180
+global í† ë²Œë³´ìŠ¤X1 := 620
+global í† ë²Œë³´ìŠ¤Y1 := 120
+global í† ë²Œë³´ìŠ¤X2 := 1080
+global í† ë²Œë³´ìŠ¤Y2 := 180
 
-global Åä¹ú¹Ýº¹Àç½ÃÀÛX1 := 430
-global Åä¹ú¹Ýº¹Àç½ÃÀÛY1 := 630
-global Åä¹ú¹Ýº¹Àç½ÃÀÛX2 := 580
-global Åä¹ú¹Ýº¹Àç½ÃÀÛY2 := 700
+global í† ë²Œë°˜ë³µìž¬ì‹œìž‘X1 := 430
+global í† ë²Œë°˜ë³µìž¬ì‹œìž‘Y1 := 630
+global í† ë²Œë°˜ë³µìž¬ì‹œìž‘X2 := 580
+global í† ë²Œë°˜ë³µìž¬ì‹œìž‘Y2 := 700
 
-global Åä¹ú½ÃÀÛX1 := 650
-global Åä¹ú½ÃÀÛY1 := 630
-global Åä¹ú½ÃÀÛX2 := 710
-global Åä¹ú½ÃÀÛY2 := 700
+global í† ë²Œì‹œìž‘X1 := 650
+global í† ë²Œì‹œìž‘Y1 := 630
+global í† ë²Œì‹œìž‘X2 := 710
+global í† ë²Œì‹œìž‘Y2 := 700
 
-global Áï½ÃÀçµµÀüX1 := 600
-global Áï½ÃÀçµµÀüY1 := 650
-global Áï½ÃÀçµµÀüX2 := 1100
-global Áï½ÃÀçµµÀüY2 := 700
+global ì¦‰ì‹œìž¬ë„ì „X1 := 600
+global ì¦‰ì‹œìž¬ë„ì „Y1 := 650
+global ì¦‰ì‹œìž¬ë„ì „X2 := 1100
+global ì¦‰ì‹œìž¬ë„ì „Y2 := 700
 
-global Åä¹úÀÔÀå±ÇX1 := 800
-global Åä¹úÀÔÀå±ÇY1 := 350
-global Åä¹úÀÔÀå±ÇX2 := 910
-global Åä¹úÀÔÀå±ÇY2 := 400
+global í† ë²Œìž…ìž¥ê¶ŒX1 := 800
+global í† ë²Œìž…ìž¥ê¶ŒY1 := 350
+global í† ë²Œìž…ìž¥ê¶ŒX2 := 910
+global í† ë²Œìž…ìž¥ê¶ŒY2 := 400
 
-global ÈæÁ¤·ÉÀÇ·Ú_¾ÆÀÌÅÛX1 := 724
-global ÈæÁ¤·ÉÀÇ·Ú_¾ÆÀÌÅÛY1 := 237
-global ÈæÁ¤·ÉÀÇ·Ú_¾ÆÀÌÅÛX2 := 810
-global ÈæÁ¤·ÉÀÇ·Ú_¾ÆÀÌÅÛY2 := 610
+global í‘ì •ë ¹ì˜ë¢°_ì•„ì´í…œX1 := 724
+global í‘ì •ë ¹ì˜ë¢°_ì•„ì´í…œY1 := 237
+global í‘ì •ë ¹ì˜ë¢°_ì•„ì´í…œX2 := 810
+global í‘ì •ë ¹ì˜ë¢°_ì•„ì´í…œY2 := 610
 
-global ÀÚµ¿»ç³ÉÁøÀÔX1 := 1069
-global ÀÚµ¿»ç³ÉÁøÀÔY1 := 693
-global ÀÚµ¿»ç³ÉÁøÀÔX2 := 1094
-global ÀÚµ¿»ç³ÉÁøÀÔY2 := 723
+global ìžë™ì‚¬ëƒ¥ì§„ìž…X1 := 1069
+global ìžë™ì‚¬ëƒ¥ì§„ìž…Y1 := 693
+global ìžë™ì‚¬ëƒ¥ì§„ìž…X2 := 1094
+global ìžë™ì‚¬ëƒ¥ì§„ìž…Y2 := 723
 
-global ¸ÞÀÎ´øÀü½ÃÀÛX1 := 250
-global ¸ÞÀÎ´øÀü½ÃÀÛY1 := 630
-global ¸ÞÀÎ´øÀü½ÃÀÛX2 := 430
-global ¸ÞÀÎ´øÀü½ÃÀÛY2 := 700
+global ë©”ì¸ë˜ì „ì‹œìž‘X1 := 250
+global ë©”ì¸ë˜ì „ì‹œìž‘Y1 := 630
+global ë©”ì¸ë˜ì „ì‹œìž‘X2 := 430
+global ë©”ì¸ë˜ì „ì‹œìž‘Y2 := 700
 
-global ÈæÁ¤·ÉÄù½ºÆ®X1 := 1060
-global ÈæÁ¤·ÉÄù½ºÆ®Y1 := 240
-global ÈæÁ¤·ÉÄù½ºÆ®X2 := 1230
-global ÈæÁ¤·ÉÄù½ºÆ®Y2 := 600
+global í‘ì •ë ¹í€˜ìŠ¤íŠ¸X1 := 1060
+global í‘ì •ë ¹í€˜ìŠ¤íŠ¸Y1 := 240
+global í‘ì •ë ¹í€˜ìŠ¤íŠ¸X2 := 1230
+global í‘ì •ë ¹í€˜ìŠ¤íŠ¸Y2 := 600
 
-global Å©ÀÚÄ«ÀÌ¹ÌÁöX1 := 295
-global Å©ÀÚÄ«ÀÌ¹ÌÁöY1 := 43
-global Å©ÀÚÄ«ÀÌ¹ÌÁöX2 := 640
-global Å©ÀÚÄ«ÀÌ¹ÌÁöY2 := 115
+global í¬ìžì¹´ì´ë¯¸ì§€X1 := 295
+global í¬ìžì¹´ì´ë¯¸ì§€Y1 := 43
+global í¬ìžì¹´ì´ë¯¸ì§€X2 := 640
+global í¬ìžì¹´ì´ë¯¸ì§€Y2 := 115
 
-global ´øÀü»ç¸ÁX1 := 430
-global ´øÀü»ç¸ÁY1 := 440
-global ´øÀü»ç¸ÁX2 := 600
-global ´øÀü»ç¸ÁY2 := 500
+global ë˜ì „ì‚¬ë§X1 := 430
+global ë˜ì „ì‚¬ë§Y1 := 440
+global ë˜ì „ì‚¬ë§X2 := 600
+global ë˜ì „ì‚¬ë§Y2 := 500
 
-global Äù½ºÆ®Çàµ¿¿µ¿ªX1 := 980
-global Äù½ºÆ®Çàµ¿¿µ¿ªY1 := 460
-global Äù½ºÆ®Çàµ¿¿µ¿ªX2 := 1080
-global Äù½ºÆ®Çàµ¿¿µ¿ªY2 := 625
+global í€˜ìŠ¤íŠ¸í–‰ë™ì˜ì—­X1 := 980
+global í€˜ìŠ¤íŠ¸í–‰ë™ì˜ì—­Y1 := 460
+global í€˜ìŠ¤íŠ¸í–‰ë™ì˜ì—­X2 := 1080
+global í€˜ìŠ¤íŠ¸í–‰ë™ì˜ì—­Y2 := 625
 
-global Äù½ºÆ®X1 := 990
-global Äù½ºÆ®Y1 := 185
-global Äù½ºÆ®X2 := 1250
-global Äù½ºÆ®Y2 := 325
+global í€˜ìŠ¤íŠ¸X1 := 990
+global í€˜ìŠ¤íŠ¸Y1 := 185
+global í€˜ìŠ¤íŠ¸X2 := 1250
+global í€˜ìŠ¤íŠ¸Y2 := 325
 
-global ¾ÆÀÌÅÛ°¡¹æX1 := 1070
-global ¾ÆÀÌÅÛ°¡¹æY1 := 45
-global ¾ÆÀÌÅÛ°¡¹æX2 := 1125
-global ¾ÆÀÌÅÛ°¡¹æY2 := 95
+global ì•„ì´í…œê°€ë°©X1 := 1070
+global ì•„ì´í…œê°€ë°©Y1 := 45
+global ì•„ì´í…œê°€ë°©X2 := 1125
+global ì•„ì´í…œê°€ë°©Y2 := 95
 
-global ³¬½Ã´ëX1 := 1120
-global ³¬½Ã´ëY1 := 600
-global ³¬½Ã´ëX2 := 1210
-global ³¬½Ã´ëY2 := 670
+global ë‚šì‹œëŒ€X1 := 1120
+global ë‚šì‹œëŒ€Y1 := 600
+global ë‚šì‹œëŒ€X2 := 1210
+global ë‚šì‹œëŒ€Y2 := 670
 
-global ¹°¾àX1 := 900
-global ¹°¾àY1 := 670
-global ¹°¾àX2 := 950
-global ¹°¾àY2 := 720
+global ë¬¼ì•½X1 := 900
+global ë¬¼ì•½Y1 := 670
+global ë¬¼ì•½X2 := 950
+global ë¬¼ì•½Y2 := 720
 
-global ´ëÈ­X1 := 1163
-global ´ëÈ­Y1 := 683
-global ´ëÈ­X2 := 1205
-global ´ëÈ­Y2 := 725
+global ëŒ€í™”X1 := 1163
+global ëŒ€í™”Y1 := 683
+global ëŒ€í™”X2 := 1205
+global ëŒ€í™”Y2 := 725
 
 global TouchX1 := 370
 global TouchY1 := 511
 global TouchX2 := 445
 global TouchY2 := 525
 
-global ¿Ï·áX1 := 950
-global ¿Ï·áY1 := 200
-global ¿Ï·áX2 := 1265
-global ¿Ï·áY2 := 350
+global ì™„ë£ŒX1 := 950
+global ì™„ë£ŒY1 := 200
+global ì™„ë£ŒX2 := 1265
+global ì™„ë£ŒY2 := 350
 
-global Çàµ¿X1 := 420
-global Çàµ¿Y1 := 80
-global Çàµ¿X2 := 905
-global Çàµ¿Y2 := 680
+global í–‰ë™X1 := 420
+global í–‰ë™Y1 := 80
+global í–‰ë™X2 := 905
+global í–‰ë™Y2 := 680
 
-global º¸½ºÄù½ºÆ®X1 := 925
-global º¸½ºÄù½ºÆ®Y1 := 195
-global º¸½ºÄù½ºÆ®X2 := 1265
-global º¸½ºÄù½ºÆ®Y2 := 225
+global ë³´ìŠ¤í€˜ìŠ¤íŠ¸X1 := 925
+global ë³´ìŠ¤í€˜ìŠ¤íŠ¸Y1 := 195
+global ë³´ìŠ¤í€˜ìŠ¤íŠ¸X2 := 1265
+global ë³´ìŠ¤í€˜ìŠ¤íŠ¸Y2 := 225
 
-global ÀÚµ¿ÀüÅõX1 := 425
-global ÀÚµ¿ÀüÅõY1 := 680
-global ÀÚµ¿ÀüÅõX2 := 465
-global ÀÚµ¿ÀüÅõY2 := 715
+global ìžë™ì „íˆ¬X1 := 425
+global ìžë™ì „íˆ¬Y1 := 680
+global ìžë™ì „íˆ¬X2 := 465
+global ìžë™ì „íˆ¬Y2 := 715
 
-global Æ©Åä¸®¾óÃë¼ÒX1 := 510
-global Æ©Åä¸®¾óÃë¼ÒY1 := 390
-global Æ©Åä¸®¾óÃë¼ÒX2 := 630
-global Æ©Åä¸®¾óÃë¼ÒY2 := 440
+global íŠœí† ë¦¬ì–¼ì·¨ì†ŒX1 := 510
+global íŠœí† ë¦¬ì–¼ì·¨ì†ŒY1 := 390
+global íŠœí† ë¦¬ì–¼ì·¨ì†ŒX2 := 630
+global íŠœí† ë¦¬ì–¼ì·¨ì†ŒY2 := 440
 
-global ÀÓ¹«¼º°øX1 := 500
-global ÀÓ¹«¼º°øY1 := 180
-global ÀÓ¹«¼º°øX2 := 800
-global ÀÓ¹«¼º°øY2 := 360
+global ìž„ë¬´ì„±ê³µX1 := 500
+global ìž„ë¬´ì„±ê³µY1 := 180
+global ìž„ë¬´ì„±ê³µX2 := 800
+global ìž„ë¬´ì„±ê³µY2 := 360
 
-global ³¬±â¸Ó¸®À§X1 := 620
-global ³¬±â¸Ó¸®À§Y1 := 260
-global ³¬±â¸Ó¸®À§X2 := 660
-global ³¬±â¸Ó¸®À§Y2 := 310
+global ë‚šê¸°ë¨¸ë¦¬ìœ„X1 := 620
+global ë‚šê¸°ë¨¸ë¦¬ìœ„Y1 := 260
+global ë‚šê¸°ë¨¸ë¦¬ìœ„X2 := 660
+global ë‚šê¸°ë¨¸ë¦¬ìœ„Y2 := 310
 
-global Àü¸®Ç°Á¤¸®X1 := 1080
-global Àü¸®Ç°Á¤¸®Y1 := 660
-global Àü¸®Ç°Á¤¸®X2 := 1225
-global Àü¸®Ç°Á¤¸®Y2 := 710
+global ì „ë¦¬í’ˆì •ë¦¬X1 := 1080
+global ì „ë¦¬í’ˆì •ë¦¬Y1 := 660
+global ì „ë¦¬í’ˆì •ë¦¬X2 := 1225
+global ì „ë¦¬í’ˆì •ë¦¬Y2 := 710
 
-global ¾ÆÀÌÅÛ_º¸¼®Ã¢X1 := 1110
-global ¾ÆÀÌÅÛ_º¸¼®Ã¢Y1 := 210
-global ¾ÆÀÌÅÛ_º¸¼®Ã¢X2 := 1160
-global ¾ÆÀÌÅÛ_º¸¼®Ã¢Y2 := 260
+global ì•„ì´í…œ_ë³´ì„ì°½X1 := 1110
+global ì•„ì´í…œ_ë³´ì„ì°½Y1 := 210
+global ì•„ì´í…œ_ë³´ì„ì°½X2 := 1160
+global ì•„ì´í…œ_ë³´ì„ì°½Y2 := 260
 
-global ÈæÁ¤·É¾ÆÀÌÅÛÃ¢X1 := 850
-global ÈæÁ¤·É¾ÆÀÌÅÛÃ¢Y1 := 180
-global ÈæÁ¤·É¾ÆÀÌÅÛÃ¢X2 := 1260
-global ÈæÁ¤·É¾ÆÀÌÅÛÃ¢Y2 := 570
+global í‘ì •ë ¹ì•„ì´í…œì°½X1 := 850
+global í‘ì •ë ¹ì•„ì´í…œì°½Y1 := 180
+global í‘ì •ë ¹ì•„ì´í…œì°½X2 := 1260
+global í‘ì •ë ¹ì•„ì´í…œì°½Y2 := 570
 
-global ÈæÁ¤·É¸ÔÀÌÁÖ±âX1 := 730
-global ÈæÁ¤·É¸ÔÀÌÁÖ±âY1 := 670
-global ÈæÁ¤·É¸ÔÀÌÁÖ±âX2 := 840
-global ÈæÁ¤·É¸ÔÀÌÁÖ±âY2 := 710
+global í‘ì •ë ¹ë¨¹ì´ì£¼ê¸°X1 := 730
+global í‘ì •ë ¹ë¨¹ì´ì£¼ê¸°Y1 := 670
+global í‘ì •ë ¹ë¨¹ì´ì£¼ê¸°X2 := 840
+global í‘ì •ë ¹ë¨¹ì´ì£¼ê¸°Y2 := 710
 
-global ±â¿îÈí¼öX1 := 570
-global ±â¿îÈí¼öY1 := 670
-global ±â¿îÈí¼öX2 := 720
-global ±â¿îÈí¼öY2 := 720
+global ê¸°ìš´í¡ìˆ˜X1 := 570
+global ê¸°ìš´í¡ìˆ˜Y1 := 670
+global ê¸°ìš´í¡ìˆ˜X2 := 720
+global ê¸°ìš´í¡ìˆ˜Y2 := 720
 
-global Èí¼öÈ®ÀÎX1 := 670
-global Èí¼öÈ®ÀÎY1 := 520
-global Èí¼öÈ®ÀÎX2 := 790
-global Èí¼öÈ®ÀÎY2 := 565
+global í¡ìˆ˜í™•ì¸X1 := 670
+global í¡ìˆ˜í™•ì¸Y1 := 520
+global í¡ìˆ˜í™•ì¸X2 := 790
+global í¡ìˆ˜í™•ì¸Y2 := 565
 
-global »óÀÎ¸®½ºÆ®X1 := 20
-global »óÀÎ¸®½ºÆ®Y1 := 90
-global »óÀÎ¸®½ºÆ®X2 := 340
-global »óÀÎ¸®½ºÆ®Y2 := 370
+global ìƒì¸ë¦¬ìŠ¤íŠ¸X1 := 20
+global ìƒì¸ë¦¬ìŠ¤íŠ¸Y1 := 90
+global ìƒì¸ë¦¬ìŠ¤íŠ¸X2 := 340
+global ìƒì¸ë¦¬ìŠ¤íŠ¸Y2 := 370
 
-global »óÀÎ¸ñ·Ï¹öÆ°X := 260
-global »óÀÎ¸ñ·Ï¹öÆ°Y := 250
+global ìƒì¸ëª©ë¡ë²„íŠ¼X := 260
+global ìƒì¸ëª©ë¡ë²„íŠ¼Y := 250
 
-global »óÀÎ¸ñ·ÏÆîÄ¡±âX := 270
-global »óÀÎ¸ñ·ÏÆîÄ¡±âY := 210
+global ìƒì¸ëª©ë¡íŽ¼ì¹˜ê¸°X := 270
+global ìƒì¸ëª©ë¡íŽ¼ì¹˜ê¸°Y := 210
 
-global »óÀÎ¸ñ·ÏÁ¢±âX := 550
-global »óÀÎ¸ñ·ÏÁ¢±âY := 360
+global ìƒì¸ëª©ë¡ì ‘ê¸°X := 550
+global ìƒì¸ëª©ë¡ì ‘ê¸°Y := 360
 
-global ÆÈ±â_¾ÆÀÌÅÛÃ¢X1 := 850
-global ÆÈ±â_¾ÆÀÌÅÛÃ¢Y1 := 200
-global ÆÈ±â_¾ÆÀÌÅÛÃ¢X2 := 1260
-global ÆÈ±â_¾ÆÀÌÅÛÃ¢Y2 := 600
+global íŒ”ê¸°_ì•„ì´í…œì°½X1 := 850
+global íŒ”ê¸°_ì•„ì´í…œì°½Y1 := 200
+global íŒ”ê¸°_ì•„ì´í…œì°½X2 := 1260
+global íŒ”ê¸°_ì•„ì´í…œì°½Y2 := 600
 
-global ÀÀ´ä¾øÀ½ÆÃ±èX1 := 310
-global ÀÀ´ä¾øÀ½ÆÃ±èY1 := 310
-global ÀÀ´ä¾øÀ½ÆÃ±èX2 := 960
-global ÀÀ´ä¾øÀ½ÆÃ±èY2 := 510
+global ì‘ë‹µì—†ìŒíŒ…ê¹€X1 := 310
+global ì‘ë‹µì—†ìŒíŒ…ê¹€Y1 := 310
+global ì‘ë‹µì—†ìŒíŒ…ê¹€X2 := 960
+global ì‘ë‹µì—†ìŒíŒ…ê¹€Y2 := 510
 
-global ÀÀ´ä¾øÀ½È®ÀÎX := 900
-global ÀÀ´ä¾øÀ½È®ÀÎY := 475
+global ì‘ë‹µì—†ìŒí™•ì¸X := 900
+global ì‘ë‹µì—†ìŒí™•ì¸Y := 475
 
-global ÀÓ¹«½ÃÀÛX1 := 520
-global ÀÓ¹«½ÃÀÛY1 := 520
-global ÀÓ¹«½ÃÀÛX2 := 760
-global ÀÓ¹«½ÃÀÛY2 := 580
+global ìž„ë¬´ì‹œìž‘X1 := 520
+global ìž„ë¬´ì‹œìž‘Y1 := 520
+global ìž„ë¬´ì‹œìž‘X2 := 760
+global ìž„ë¬´ì‹œìž‘Y2 := 580
 
-global ¹«°ÔX1 := 510
-global ¹«°ÔY1 := 620
-global ¹«°ÔX2 := 720
-global ¹«°ÔY2 := 650
+global ë¬´ê²ŒX1 := 510
+global ë¬´ê²ŒY1 := 620
+global ë¬´ê²ŒX2 := 720
+global ë¬´ê²ŒY2 := 650
 
-global ¹«°Ô¸¶À»ÀÌµ¿X1 := 400
-global ¹«°Ô¸¶À»ÀÌµ¿Y1 := 380
-global ¹«°Ô¸¶À»ÀÌµ¿X2 := 790
-global ¹«°Ô¸¶À»ÀÌµ¿Y2 := 600
+global ë¬´ê²Œë§ˆì„ì´ë™X1 := 400
+global ë¬´ê²Œë§ˆì„ì´ë™Y1 := 380
+global ë¬´ê²Œë§ˆì„ì´ë™X2 := 790
+global ë¬´ê²Œë§ˆì„ì´ë™Y2 := 600
 
-global »óÁ¡_2X1 := 950
-global »óÁ¡_2Y1 := 450
-global »óÁ¡_2X2 := 1230
-global »óÁ¡_2Y2 := 690
+global ìƒì _2X1 := 950
+global ìƒì _2Y1 := 450
+global ìƒì _2X2 := 1230
+global ìƒì _2Y2 := 690
 
-global ±¤¿ø¼®ÅÇX1 := 1150
-global ±¤¿ø¼®ÅÇY1 := 120
-global ±¤¿ø¼®ÅÇX2 := 1210
-global ±¤¿ø¼®ÅÇY2 := 180
+global ê´‘ì›ì„íƒ­X1 := 1150
+global ê´‘ì›ì„íƒ­Y1 := 120
+global ê´‘ì›ì„íƒ­X2 := 1210
+global ê´‘ì›ì„íƒ­Y2 := 180
 
-global ±¤¿ø¼®Âø¿ëX1 := 1100
-global ±¤¿ø¼®Âø¿ëY1 := 670
-global ±¤¿ø¼®Âø¿ëX2 := 1240
-global ±¤¿ø¼®Âø¿ëY2 := 720
+global ê´‘ì›ì„ì°©ìš©X1 := 1100
+global ê´‘ì›ì„ì°©ìš©Y1 := 670
+global ê´‘ì›ì„ì°©ìš©X2 := 1240
+global ê´‘ì›ì„ì°©ìš©Y2 := 720
 
-global ¹Ýº¹ÀÇ·ÚÃ£¾Æ°¡±âX1 := 790
-global ¹Ýº¹ÀÇ·ÚÃ£¾Æ°¡±âY1 := 550
-global ¹Ýº¹ÀÇ·ÚÃ£¾Æ°¡±âX2 := 1120
-global ¹Ýº¹ÀÇ·ÚÃ£¾Æ°¡±âY2 := 610
+global ë°˜ë³µì˜ë¢°ì°¾ì•„ê°€ê¸°X1 := 790
+global ë°˜ë³µì˜ë¢°ì°¾ì•„ê°€ê¸°Y1 := 550
+global ë°˜ë³µì˜ë¢°ì°¾ì•„ê°€ê¸°X2 := 1120
+global ë°˜ë³µì˜ë¢°ì°¾ì•„ê°€ê¸°Y2 := 610
 
-global ¹Ýº¹ÀÇ·Ú¼ö¶ôX1 := 650
-global ¹Ýº¹ÀÇ·Ú¼ö¶ôY1 := 580
-global ¹Ýº¹ÀÇ·Ú¼ö¶ôX2 := 800
-global ¹Ýº¹ÀÇ·Ú¼ö¶ôY2 := 690
+global ë°˜ë³µì˜ë¢°ìˆ˜ë½X1 := 650
+global ë°˜ë³µì˜ë¢°ìˆ˜ë½Y1 := 580
+global ë°˜ë³µì˜ë¢°ìˆ˜ë½X2 := 800
+global ë°˜ë³µì˜ë¢°ìˆ˜ë½Y2 := 690
 
-global ÀÚµ¿»ç³ÉÀÌ¹ÌÁöX1 := 417
-global ÀÚµ¿»ç³ÉÀÌ¹ÌÁöY1 := 670
-global ÀÚµ¿»ç³ÉÀÌ¹ÌÁöX2 := 470
-global ÀÚµ¿»ç³ÉÀÌ¹ÌÁöY2 := 722
+global ìžë™ì‚¬ëƒ¥ì´ë¯¸ì§€X1 := 417
+global ìžë™ì‚¬ëƒ¥ì´ë¯¸ì§€Y1 := 670
+global ìžë™ì‚¬ëƒ¥ì´ë¯¸ì§€X2 := 470
+global ìžë™ì‚¬ëƒ¥ì´ë¯¸ì§€Y2 := 722
 
-global ¼öÁ¤ÀåÂøX1 := 100
-global ¼öÁ¤ÀåÂøY1 := 50
-global ¼öÁ¤ÀåÂøX2 := 230
-global ¼öÁ¤ÀåÂøY2 := 90
+global ìˆ˜ì •ìž¥ì°©X1 := 100
+global ìˆ˜ì •ìž¥ì°©Y1 := 50
+global ìˆ˜ì •ìž¥ì°©X2 := 230
+global ìˆ˜ì •ìž¥ì°©Y2 := 90
